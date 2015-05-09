@@ -29,7 +29,7 @@ Here is `some code` in the text.
 
 ![image](http://placehold.it/100x100){: .noborder} image with .noborder class
 
-~~~java
+``` java
 public VortalCord extends Command implements Observer {
   
   public VortalCord() {
@@ -41,7 +41,7 @@ public VortalCord extends Command implements Observer {
   }
   
 }
-~~~
+```
 
 -----
 

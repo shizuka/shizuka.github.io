@@ -207,6 +207,7 @@ img {
 img.noborder {
   padding: 0;
   border: none;
+  border-radius: 0;
 }
 
 /*for use in markdown classes*/

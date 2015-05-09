@@ -211,10 +211,18 @@ img.noborder {
   border-radius: 0;
 }
 
-/*for use in markdown classes*/
+.floatleft {
+  float: left;
+  margin-right: 1em;
+}
+
 .floatright {
   float: right;
   margin-left: 1em;
+}
+
+.center {
+  text-align: center;
 }
 
 blockquote {
@@ -222,6 +230,7 @@ blockquote {
   padding: 1em 1em 0;
   margin-bottom: 1em;
   font-style: italic;
+  display: flex;
 }
 
 code {
@@ -233,6 +242,7 @@ pre {
   padding: 1em;
   margin-bottom: 1.5em;
   background-color: #f7f2de;
+  display: flex;
 }
 
 .footnotes ol {

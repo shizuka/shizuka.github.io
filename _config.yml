@@ -4,7 +4,7 @@ title: this vortal cord
 url: "http://www.vortalcord.net"
 baseurl: ""
 markdown: redcarpet
-highlighter: rouge
+highlighter: pygments
 timezone: America/Chicago
 
 defaults:

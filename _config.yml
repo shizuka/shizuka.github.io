@@ -1,0 +1,40 @@
+#This Vortal Cord v5
+#Shizuka Kamishima - 2015-05-09
+title: this vortal cord
+url: "http://www.vortalcord.net"
+baseurl: ""
+markdown: redcarpet
+highlighter: rouge
+timezone: America/Chicago
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      author: "Shizuka Kamishima"
+      yahAbt: false
+      yahPrj: false
+      yahWrk: false
+      yahLit: false
+  - 
+    scope:
+      path: "about"
+    values:
+      yahAbt: true
+  -
+    scope:
+      path: "projects"
+    values:
+      yahPrj: true
+  -
+    scope:
+      path: "work"
+    values:
+      yahWrk: true
+  -
+    scope:
+      path: "writing"
+    values:
+      yahLit: true

@@ -1,0 +1,229 @@
+---
+layout: css
+---
+/*
+ * This Vortal Cord
+ * Shizuka Kamishima - 2015-05-07
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Iceland|Oswald);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  color: #2b2922;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: small;
+  background-color: #EAC99A;
+  background-image: url("{{ '/assets/img/100-75-5-monochrome.png' }}");
+  background-attachment: fixed;
+}
+
+#wrapper {
+  /* sets the width of the whole thing */
+  width: 800px;
+  margin: auto;
+}
+
+#logo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  float: left;
+  overflow: hidden;
+  background: url("{{ '/assets/img/logo160.png' }}") 0 0 no-repeat;
+  text-decoration: none;
+  position: fixed;
+  margin-top: 1.5em;
+  z-index: 2;
+}
+
+#mainwrapper {
+  /* everything that isn't the logo, to offset it */
+  width: 640px;
+  float: right;
+  padding-bottom: 5em;
+}
+
+header {
+  margin-left: -0.5em;
+  padding-left: 1.5em;
+  border-bottom: solid #a39770 10px;
+  width: 640px;
+  position: fixed;
+  padding-top: 4.5em;
+  background-color: #EAC99A;
+  background-image: url("{{ '/assets/img/100-75-5-monochrome.png' }}");
+  z-index: 1;
+}
+
+header h1 {
+  font-family: 'Iceland', Verdana, Geneva, sans-serif;
+  font-size: 3em;
+  line-height: 1em;
+  padding: 0 0 0 0.125em;
+  margin: 0;
+  color: #65655a;
+}
+
+header nav {
+  line-height: 1.5em;
+  margin-left: 0.5em;
+  font-weight: bold;
+  color: #65665a;
+}
+
+header nav ul {
+  padding-bottom: 0;
+  display: inline;
+}
+
+header nav li {
+  margin: 0;
+  padding: 0 0.25em 0.25em 0;
+  list-style-type: none;
+  list-style-position: outside;
+  float: left;
+}
+
+header nav li:after {
+  content: " - ";
+}
+
+header nav li:last-child:after {
+  content: "";
+}
+
+header nav li a,
+header nav li a:visited {
+  color: #804500;
+}
+
+header nav li a.youarehere:before {
+  content: "[";
+}
+
+header nav li a.youarehere:after {
+  content: "]";
+}
+
+header nav p {
+  padding-bottom: 0;
+  display: inline;
+  margin-left: -0.25em;
+}
+
+header nav p:before {
+  content: "// ";
+}
+
+#contentwrapper {
+  background-color: #efe4bd;
+  margin-left: 1.5em;
+  padding: 11em 2em 1.5em; /*large top padding to clear the header*/
+}
+
+article {
+  margin-bottom: 1em;
+  border-bottom: #a39770 solid 2px;
+}
+
+hr {
+  margin: 1em 0;
+  border: 0;
+  border-bottom: #a39770 solid 2px;
+}
+
+p {
+  line-height: 1.75em;
+  padding-bottom: 1em;
+}
+
+a, a:visited {
+  color: #a32500;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+/* external links */
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+  content: url('{{ '/assets/img/extlink.png' }}');
+  margin: 0 0 0 5px;
+}
+
+/* excepting us for external links */
+a[href*="//www.vortalcord.net/"]:after {
+  content: '';
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+  color: #65655A;
+}
+
+ul,ol {
+  list-style-position: inside;
+  line-height: 1.75em;
+  padding-bottom: 1.5em;
+  padding-left: 0.5em;
+}
+
+h1,h2,h3 {
+  font-family: 'Oswald', Verdana, Geneva, sans-serif;
+  line-height: 2em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.65em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+blockquote {
+  background-color: #bab293;
+  padding: 1em 1em 0;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+code {
+  background-color: #f7f2de;
+  font-family: monospace;
+}
+
+pre {
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background-color: #f7f2de;
+}
+
+.footnotes ol {
+  padding-bottom: 0;
+  padding-left: 3em;
+  font-size: smaller;
+  list-style-position: outside;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+}
+

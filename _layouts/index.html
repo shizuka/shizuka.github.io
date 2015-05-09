@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+This Vortal Cord - Fifth Edition
+Shizuka Kamishima - 2015-05-07
+Powered by Jekyll
+Hosted on Github Pages
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='{{ "favicon.ico" }}' >
+    <link rel='stylesheet' type='text/css' href='{{ "/assets/css/main.css" }}'>
+    <link rel='stylesheet' type='text/css' href='{{ "/assets/css/syntax.css" }}'>
+    <title>{% if page.title %}{{page.title}} | {% endif %}{{site.title}}</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <a href="{{ site.baseurl }}/" id="logo" title="home">&nbsp;</a>
+      <div id="mainwrapper">
+        <header>
+          <h1>this vortal cord</h1>
+          <nav>
+            <ul>
+              <li><a href='{{ "/about/" }}'{% if page.yahAbt %}class='youarehere'{% endif %}>about</a></li>
+              <li><a href='{{ "/work/" }}'{% if page.yahWrk %}class='youarehere'{% endif %}>work</a></li>
+              <li><a href='{{ "/projects/" }}'{% if page.yahPrj %}class='youarehere'{% endif %}>projects</a></li>
+              <li><a href='{{ "/writing/" }}'{% if page.yahLit %}class='youarehere'{% endif %}>writing</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="contentwrapper">
+          <article>
+            {{ content }}
+          </article>
+          <footer>
+            this vortal cord | shizuka kamishima | {% if page.date %}{{ page.date }}{% else %}{{ date: "%F" }}{% endif %}<br/>
+            <a href="#">top</a> | <a href="{{ site.github.repository_url }}">src</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -212,13 +212,9 @@ img.noborder {
 }
 
 /*for use in markdown classes*/
-.floatleft {
-  float: left;
-}
-
-/*for use in markdown classes*/
 .floatright {
   float: right;
+  margin-left: 1em;
 }
 
 blockquote {

@@ -135,6 +135,7 @@ article {
 }
 
 hr {
+  clear: both;
   border: 0;
   border-bottom: #a39770 solid 2px;
   margin-bottom: 1em;

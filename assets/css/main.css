@@ -163,7 +163,8 @@ a[href^="https://"]:after {
 }
 
 /* excepting us for external links */
-a[href*="//www.vortalcord.net/"]:after {
+a[href*="//www.vortalcord.net/"]:after,
+a.noext:after {
   content: '';
   margin: 0;
 }

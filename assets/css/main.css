@@ -127,18 +127,17 @@ header nav p:before {
 #contentwrapper {
   background-color: #efe4bd;
   margin-left: 1.5em;
-  padding: 11em 2em 1.5em; /*large top padding to clear the header*/
+  padding: 12em 2em 1.5em; /*large top padding to clear the header*/
 }
 
 article {
-  margin-bottom: 1em;
-  border-bottom: #a39770 solid 2px;
+  /*not sure we need this anymore*/
 }
 
 hr {
-  margin: 1em 0;
   border: 0;
   border-bottom: #a39770 solid 2px;
+  margin-bottom: 1em;
 }
 
 p {
@@ -184,6 +183,7 @@ ul,ol {
 h1,h2,h3 {
   font-family: 'Oswald', Verdana, Geneva, sans-serif;
   line-height: 2em;
+  margin-top: -0.5em;
 }
 
 h1 {
@@ -246,6 +246,9 @@ pre {
 }
 
 footer {
+  clear: both;
+  padding-top: 1em;
+  border-top: #a39770 solid 2px;
   font-size: smaller;
   text-align: center;
 }

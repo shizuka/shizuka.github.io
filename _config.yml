@@ -3,9 +3,12 @@
 title: this vortal cord
 url: "http://www.vortalcord.net"
 baseurl: ""
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 timezone: America/Chicago
+
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 defaults:
   -

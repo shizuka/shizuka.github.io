@@ -198,6 +198,27 @@ h3 {
   font-size: 1.25em;
 }
 
+img {
+  padding: 1px;
+  border: 2px solid #a39770;
+  border-radius: 10px;
+}
+
+img.noborder {
+  padding: 0;
+  border: none;
+}
+
+/*for use in markdown classes*/
+.floatleft {
+  float: left;
+}
+
+/*for use in markdown classes*/
+.floatright {
+  float: right;
+}
+
 blockquote {
   background-color: #bab293;
   padding: 1em 1em 0;

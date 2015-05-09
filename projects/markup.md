@@ -23,11 +23,13 @@ Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tris
 
 This is some *italic* and some **bold** text.
 
-> This is a blockquote
+> This is a blockquote. It's also making sure that "smart quotes" aren't on.
 
 Here is `some code` in the text.
 
-```java
+![image](http://placehold.it/100x100){: .noborder} image with .noborder class
+
+~~~java
 public VortalCord extends Command implements Observer {
   
   public VortalCord() {
@@ -39,7 +41,7 @@ public VortalCord extends Command implements Observer {
   }
   
 }
-```
+~~~
 
 -----
 

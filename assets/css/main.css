@@ -227,9 +227,10 @@ img.noborder {
 
 blockquote {
   background-color: #bab293;
-  padding: 1em 1em 0;
+  padding: 1em 1.25em 0;
   margin-bottom: 1em;
   font-style: italic;
+  font-size: 0.85em;
   display: flex;
 }
 

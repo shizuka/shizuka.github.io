@@ -1,5 +1,6 @@
 ---
 title: resume
+layout: index
 date: 2015-05-10
 ---
 

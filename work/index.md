@@ -22,7 +22,14 @@ date: 2015-05-10
 [gh]: http://gamer.haus/
 [tn]: http://www.tribesnext.com/
 
+[imgbrst]: brst-spike-theater.png
+[imgwom]: wom-frontpage.png
+[imggh]: gh-forums.png
+
 -----
+
+[![Bronystate Spike theater][imgbrst]][brst]{: .noext}
+{: .floatright}
 
 ## [Bronystate][brst] / Technical Supervisor / 2011-present
 
@@ -53,14 +60,17 @@ thousands of users.
 
 -----
 
+[![World of Minecraft front page][imgwom]][wom]{: .noext}
+{: .floatright}
+
 ## [World of Minecraft][wom] / Moderator / 2010-2011
 
 World of Minecraft was a Minecraft Classic server network, before the
 introduction of survival multiplayer to the Alpha version of the game. They
 maintained several themed servers (a city skyline, a big flat box, rolling
-hills, etc) that attracted many talented builders. Power struggles among
-upper admins led to the IRC channel's collapse in late 2011, and the site
-name turned over to former staff to continue on hosting Minecraft servers.
+hills, etc) that attracted many talented builders. The IRC community fell
+apart in late 2011, and the site legacy was carried on by some former
+staff.
 
 ### Highlights
 
@@ -69,6 +79,9 @@ name turned over to former staff to continue on hosting Minecraft servers.
 - Interacted with regular community members in IRC
 
 -----
+
+[![Gamer Haus forums][imggh]][gh]{: .noext}
+{: .floatright}
 
 ## [Goon Haven][gh] / Community Architect / 2009-2011
 

@@ -1,6 +1,3 @@
----
-layout: css
----
 /*
  * This Vortal Cord
  * Shizuka Kamishima - 2015-05-07
@@ -22,7 +19,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-size: small;
   background-color: #EAC99A;
-  background-image: url("{{ '/assets/img/100-75-5-monochrome.png' }}");
+  background-image: url("/assets/img/100-75-5-monochrome.png");
   background-attachment: fixed;
 }
 
@@ -38,7 +35,7 @@ body {
   height: 160px;
   float: left;
   overflow: hidden;
-  background: url("{{ '/assets/img/logo160.png' }}") 0 0 no-repeat;
+  background: url("/assets/img/logo160.png") 0 0 no-repeat;
   text-decoration: none;
   position: fixed;
   margin-top: 1.5em;
@@ -60,7 +57,7 @@ header {
   position: fixed;
   padding-top: 4.5em;
   background-color: #EAC99A;
-  background-image: url("{{ '/assets/img/100-75-5-monochrome.png' }}");
+  background-image: url("/assets/img/100-75-5-monochrome.png");
   z-index: 1;
 }
 
@@ -159,8 +156,8 @@ a:hover, a:active {
 /* external links */
 a[href^="http://"]:after,
 a[href^="https://"]:after {
-  content: url('{{ '/assets/img/extlink.png' }}');
-  margin: 0 0 0 5px;
+  content: url('/assets/img/extlink.png');
+  margin: 0 0 0 3px;
 }
 
 /* excepting us for external links */

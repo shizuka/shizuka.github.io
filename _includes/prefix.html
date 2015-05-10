@@ -17,6 +17,9 @@ Hosted on Github Pages
     {% endfor %}{% endif %}
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js'></script>
     <script type='text/javascript'>
+      //disable auto language detection
+      //force it to rely on markdown's pre-code class
+      hljs.configure({ languages: [] });
       hljs.initHighlightingOnLoad();
     </script>
     {% if page.prejs %}{% for prejs in page.prejs %}

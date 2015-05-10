@@ -32,6 +32,4 @@ $color-link-light:            #a32500;
 $color-link-nav:              #804500;
 
 @import 'web-fonts';
-@each $fnt in map-values($fonts) {
-  @include web-fonts($fnt);
-}
+@include web-fonts(map-values($fonts));

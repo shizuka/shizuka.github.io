@@ -1,4 +1,7 @@
       </div>
     </div>
+  {% if page.postjs %}{% for postjs in page.postjs %}
+  <script type='text/javascript' src='{{ postjs }}'></script>
+  {% endfor %}{% endif %}
   </body>
 </html>

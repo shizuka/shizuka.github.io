@@ -9,7 +9,7 @@ date: 2015-05-09
 ![Avatar of Asuka Langley I use everywhere](asu_real_tall_w160.png)
 {: .floatright}
 
-> floating on the vast and infinite net
+> floating on the vast and infinite net  
 > tethered only by [this vortal cord](vortspeech.html)
 
 My name is Shizuka Kamishima. I'm a writer, programmer, and gamer living in

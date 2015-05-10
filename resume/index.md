@@ -32,7 +32,7 @@ date: 2015-05-10
 [![Bronystate Spike theater][imgbrst]][brst]{: .noext}
 {: .floatright}
 
-## [Bronystate][brst] / Technical Supervisor / 2011-present
+## [Bronystate][brst] / Technical Supervisor / 2011-present {#brst}
 
 Bronystate is an IRC community born from the *My Little Pony: Friendship is
 Magic* fandom, started in May 2011. Their focus is video streaming, with
@@ -64,7 +64,7 @@ thousands of users.
 [![World of Minecraft front page][imgwom]][wom]{: .noext}
 {: .floatright}
 
-## [World of Minecraft][wom] / Moderator / 2010-2011
+## [World of Minecraft][wom] / Moderator / 2010-2011 {#wom}
 
 World of Minecraft was a Minecraft Classic server network, before the
 introduction of survival multiplayer to the Alpha version of the game. They
@@ -84,7 +84,7 @@ staff.
 [![Gamer Haus forums][imggh]][gh]{: .noext}
 {: .floatright}
 
-## [Goon Haven][gh] / Community Architect / 2009-2011
+## [Goon Haven][gh] / Community Architect / 2009-2011 {#gh}
 
 Goon Haven, now Gamer Haus, was one of several server communities to spring
 up shortly after the release of [TribesNext][tn] in early 2009. It was

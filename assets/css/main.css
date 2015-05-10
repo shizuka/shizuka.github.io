@@ -127,7 +127,7 @@ header nav p:before {
 #contentwrapper {
   background-color: #efe4bd;
   margin-left: 1.5em;
-  padding: 12em 2em 1.5em; /*large top padding to clear the header*/
+  padding: 11em 2em 1.5em; /*large top padding to clear the header*/
 }
 
 article {
@@ -147,6 +147,7 @@ p {
 }
 
 a, a:visited {
+  display: inline-block;
   color: #a32500;
   text-decoration: none;
 }
@@ -184,19 +185,20 @@ ul,ol {
 h1,h2,h3 {
   font-family: 'Oswald', Verdana, Geneva, sans-serif;
   line-height: 2em;
-  margin-top: -0.5em;
+  margin-top: -0.25em;
+  margin-bottom: 0.25em;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 h2 {
-  font-size: 1.65em;
+  font-size: 1.35em;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 img {

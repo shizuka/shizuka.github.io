@@ -1,9 +1,12 @@
+---
+layout: css
+---
 /*
  * This Vortal Cord
  * Shizuka Kamishima - 2015-05-07
  */
 
-@import url(http://fonts.googleapis.com/css?family=Iceland|Oswald);
+@import 'colors';
 
 * {
   margin: 0;
@@ -15,10 +18,10 @@ html {
 }
 
 body {
-  color: #2b2922;
-  font-family: Verdana, Geneva, sans-serif;
+  color: $text-color;
+  font-family: $body-font;
   font-size: small;
-  background-color: #EAC99A;
+  background-color: $page-background-color;
   background-image: url("/assets/img/100-75-5-monochrome.png");
   background-attachment: fixed;
 }
@@ -52,29 +55,29 @@ body {
 header {
   margin-left: -0.5em;
   padding-left: 1.5em;
-  border-bottom: solid #a39770 10px;
+  border-bottom: $border-color solid 10px;
   width: 640px;
   position: fixed;
   padding-top: 4.5em;
-  background-color: #EAC99A;
+  background-color: $page-background-color;
   background-image: url("/assets/img/100-75-5-monochrome.png");
   z-index: 1;
 }
 
 header h1 {
-  font-family: 'Iceland', Verdana, Geneva, sans-serif;
+  font-family: $title-font;
   font-size: 3em;
   line-height: 1em;
   padding: 0 0 0 0.125em;
   margin: 0;
-  color: #65655a;
+  color: $light-text-color;
 }
 
 header nav {
   line-height: 1.5em;
   margin-left: 0.5em;
   font-weight: bold;
-  color: #65665a;
+  color: $light-text-color;
 }
 
 header nav ul {
@@ -100,7 +103,7 @@ header nav li:last-child:after {
 
 header nav li a,
 header nav li a:visited {
-  color: #804500;
+  color: $nav-link-color;
 }
 
 header nav li a.youarehere:before {
@@ -122,7 +125,7 @@ header nav p:before {
 }
 
 #contentwrapper {
-  background-color: #efe4bd;
+  background-color: $content-background-color;
   margin-left: 1.5em;
   padding: 11em 2em 1.5em; /*large top padding to clear the header*/
 }
@@ -134,7 +137,7 @@ article {
 hr {
   clear: both;
   border: 0;
-  border-bottom: #a39770 solid 2px;
+  border-bottom: $border-color solid 2px;
   margin-bottom: 1em;
 }
 
@@ -145,7 +148,7 @@ p {
 
 a, a:visited {
   display: inline-block;
-  color: #a32500;
+  color: $link-color;
   text-decoration: none;
 }
 
@@ -169,7 +172,7 @@ a.noext:after {
 
 strong {
   font-weight: bold;
-  color: #65655A;
+  color: $light-text-color;
 }
 
 ul,ol {
@@ -179,7 +182,7 @@ ul,ol {
 }
 
 h1,h2,h3 {
-  font-family: 'Oswald', Verdana, Geneva, sans-serif;
+  font-family: $header-font;
   line-height: 2em;
   margin-top: -0.25em;
   margin-bottom: 0.25em;
@@ -234,7 +237,7 @@ img.noborder {
 }
 
 blockquote {
-  background-color: #bab293;
+  background-color: $blockquote-background-color;
   padding: 1em 1.25em 0;
   margin-bottom: 1em;
   font-style: italic;
@@ -243,14 +246,14 @@ blockquote {
 }
 
 code {
-  background-color: #f7f2de;
+  background-color: $code-background-color;
   font-family: monospace;
 }
 
 pre {
   padding: 1em;
   margin-bottom: 1.5em;
-  background-color: #f7f2de;
+  background-color: $code-background-color;
   overflow-x: hidden;
 }
 
@@ -264,7 +267,7 @@ pre {
 footer {
   clear: both;
   padding-top: 1em;
-  border-top: #a39770 solid 2px;
+  border-top: $border-color solid 2px;
   font-size: smaller;
   text-align: center;
 }

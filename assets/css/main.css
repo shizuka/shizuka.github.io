@@ -201,6 +201,16 @@ h3 {
   font-size: 1.2em;
 }
 
+h1[id]:before,
+h2[id]:before,
+h3[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -9em; 
+  height: 9em; 
+  visibility: hidden; 
+}
+
 img {
   padding: 1px;
   border: 2px solid #a39770;
@@ -233,7 +243,7 @@ blockquote {
   margin-bottom: 1em;
   font-style: italic;
   font-size: 0.85em;
-  display: flex;
+  overflow-x: hidden;
 }
 
 code {
@@ -245,7 +255,7 @@ pre {
   padding: 1em;
   margin-bottom: 1.5em;
   background-color: #f7f2de;
-  display: flex;
+  overflow-x: hidden;
 }
 
 .footnotes ol {

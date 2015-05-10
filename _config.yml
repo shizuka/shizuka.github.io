@@ -38,9 +38,9 @@ defaults:
       yahPrj: true
   -
     scope:
-      path: "work"
+      path: "resume"
     values:
-      yahWrk: true
+      yahRes: true
   -
     scope:
       path: "writing"

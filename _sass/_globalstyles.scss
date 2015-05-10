@@ -5,12 +5,14 @@ $font-default: Verdana, sans-serif;
 $fonts: (
   title: 'Iceland',
   header: 'Economica',
+  code: 'Source Code Pro',
 );
 
 //fonts
 $body-font: $font-default;
 $title-font:  map-get($fonts, title),  $font-default;
 $header-font: map-get($fonts, header), $font-default;
+$code-font:   map-get($fonts, code),   monospace;
 
 $h1-size: 2em;
 $h2-size: 1.5em;

@@ -254,7 +254,7 @@ blockquote {
 
 code {
   background-color: $color-bk-code;
-  font-family: monospace;
+  font-family: $code-font;
 }
 
 pre {

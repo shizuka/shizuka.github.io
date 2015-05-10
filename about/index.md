@@ -1,8 +1,10 @@
 ---
-title: about this vortal cord
+title: about
 layout: index
 date: 2015-05-09
 ---
+
+[boxen]: boxen.html
 
 # who am i?
 
@@ -39,10 +41,10 @@ working with your friends, rather than against them.
 # what is this vortal cord?
 
 Everyone has a site. You aren't really a citizen of the internet until you
-have a place you can call home. For years I've operated a server out of my
-bedroom, mostly to tinker with, try to learn some Linux. Its main purpose
-is to play host to my IRC client, for logging and a constant presence in
-the channel. The ability to serve pages, or games, is a bonus.
+have a place you can call home. For years I've [operated a server][boxen]
+out of my bedroom, mostly to tinker with, try to learn some Linux. Its main
+purpose is to play host to my IRC client, for logging and a constant
+presence in the channel. The ability to serve pages, or games, is a bonus.
 
 This is the fifth generation of my personal site. The first was a barebones
 html with a few links to other projects. The second was a GetSimple CMS

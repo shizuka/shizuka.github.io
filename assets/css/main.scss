@@ -6,7 +6,7 @@ layout: css
  * Shizuka Kamishima - 2015-05-07
  */
 
-@import 'colors';
+@import 'globalstyles';
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 #wrapper {
-  /* sets the width of the whole thing */
+  //sets the width of the whole thing
   width: 800px;
   margin: auto;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 #mainwrapper {
-  /* everything that isn't the logo, to offset it */
+  //everything that isn't the logo, to offset it
   width: 640px;
   float: right;
   padding-bottom: 5em;
@@ -62,76 +62,82 @@ header {
   background-color: $page-background-color;
   background-image: url("/assets/img/100-75-5-monochrome.png");
   z-index: 1;
-}
-
-header h1 {
-  font-family: $title-font;
-  font-size: 3em;
-  line-height: 1em;
-  padding: 0 0 0 0.125em;
-  margin: 0;
-  color: $light-text-color;
-}
-
-header nav {
-  line-height: 1.5em;
-  margin-left: 0.5em;
-  font-weight: bold;
-  color: $light-text-color;
-}
-
-header nav ul {
-  padding-bottom: 0;
-  display: inline;
-}
-
-header nav li {
-  margin: 0;
-  padding: 0 0.25em 0.25em 0;
-  list-style-type: none;
-  list-style-position: outside;
-  float: left;
-}
-
-header nav li:after {
-  content: " - ";
-}
-
-header nav li:last-child:after {
-  content: "";
-}
-
-header nav li a,
-header nav li a:visited {
-  color: $nav-link-color;
-}
-
-header nav li a.youarehere:before {
-  content: "[";
-}
-
-header nav li a.youarehere:after {
-  content: "]";
-}
-
-header nav p {
-  padding-bottom: 0;
-  display: inline;
-  margin-left: -0.75em;
-}
-
-header nav p:before {
-  content: "// ";
+  
+  h1 {
+    font-family: $title-font;
+    font-size: 3em;
+    line-height: 1em;
+    padding: 0 0 0 0.125em;
+    margin: 0;
+    color: $light-text-color;
+  }
+  
+  nav {
+    line-height: 1.5em;
+    margin-left: 0.5em;
+    font-weight: bold;
+    color: $light-text-color;
+    
+    p {
+      padding-bottom: 0;
+      display: inline;
+      margin-left: -0.75em;
+      &:before {
+        content: "// ";
+      }
+    }
+    
+    ul {
+      padding-bottom: 0;
+      display: inline;
+    }
+    
+    li {
+      margin: 0;
+      padding: 0 0.25em 0.25em 0;
+      list-style-type: none;
+      list-style-position: outside;
+      float: left;
+      &:after {
+        content: " - ";
+      }
+      &:last-child:after {
+        content: "";
+      }
+      
+      a {
+        color: $nav-link-color;
+        &.youarehere {
+          &:before {
+            content: "[";
+          }
+          &:after {
+            content: "]";
+          }
+        }
+        &:visited {
+          color: $nav-link-color;
+        }
+      }
+    }
+  }
 }
 
 #contentwrapper {
   background-color: $content-background-color;
   margin-left: 1.5em;
-  padding: 11em 2em 1.5em; /*large top padding to clear the header*/
+  padding: 11em 2em 1.5em; //large top padding to clear the header
+  
+  a > img {
+    border-color: $link-color;
+    &:hover {
+      border-style: dotted;
+    }
+  }
 }
 
 article {
-  /*not sure we need this anymore*/
+  //do we even need this anymore?
 }
 
 hr {
@@ -146,28 +152,31 @@ p {
   padding-bottom: 1em;
 }
 
-a, a:visited {
+a {
   display: inline-block;
   color: $link-color;
   text-decoration: none;
-}
-
-a:hover, a:active {
-  text-decoration: underline;
-}
-
-/* external links */
-a[href^="http://"]:after,
-a[href^="https://"]:after {
-  content: url('/assets/img/extlink.png');
-  margin: 0 0 0 3px;
-}
-
-/* excepting us for external links */
-a[href*="//www.vortalcord.net/"]:after,
-a.noext:after {
-  content: '';
-  margin: 0;
+  &:visited {
+    color: $link-color;
+  }
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+  
+  //external links
+  &[href^="http://"], &[href^="https://"] {
+    &:after {
+      content: url('/assets/img/extlink.png');
+      margin: 0 0 0 3px;
+    }
+  }
+  //exempt our domain, or specifically marked links
+  &[href*="//www.vortalcord.net/"], &.noext {
+    &:after {
+      content: '';
+      margin: 0;
+    }
+  }
 }
 
 strong {
@@ -186,6 +195,14 @@ h1,h2,h3 {
   line-height: 2em;
   margin-top: -0.25em;
   margin-bottom: 0.25em;
+  
+  &[id]:before {
+    display: block; 
+    content: " "; 
+    margin-top: -9em; 
+    height: 9em; 
+    visibility: hidden; 
+  }
 }
 
 h1 {
@@ -200,26 +217,16 @@ h3 {
   font-size: 1.2em;
 }
 
-h1[id]:before,
-h2[id]:before,
-h3[id]:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -9em; 
-  height: 9em; 
-  visibility: hidden; 
-}
-
 img {
   padding: 1px;
   border: 2px solid #a39770;
   border-radius: 10px;
-}
-
-img.noborder {
-  padding: 0;
-  border: none;
-  border-radius: 0;
+  
+  &.noborder {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
 }
 
 .floatleft {

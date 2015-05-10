@@ -1,8 +1,6 @@
 ---
 title: resume
 date: 2015-05-10
-css:
-- resume.css
 ---
 
 # shizuka kamishima

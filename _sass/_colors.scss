@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Iceland|Oswald);
+
+$fallback-fonts: Verdana, Geneva, sans-serif;
+$body-font:              $fallback-fonts;
+$title-font:  'Iceland', $fallback-fonts;
+$header-font: 'Oswald',  $fallback-fonts;
+ 
+$page-background-color:       #eac99a;
+$content-background-color:    #efe4bd;
+$code-background-color:       #f7f2de;
+$blockquote-background-color: #bab293;
+$border-color:                #a39770;
+$text-color:                  #2b2922;
+$light-text-color:            #65655a;
+$link-color:                  #a32500;
+$light-link-color:            #a32500;
+$nav-link-color:              #804500;

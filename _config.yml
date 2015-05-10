@@ -12,6 +12,9 @@ kramdown:
   hard_wrap: false
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
+sass:
+    sass_dir: _sass
+  
 defaults:
   -
     scope:

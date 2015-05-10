@@ -2,8 +2,8 @@
 layout: css
 ---
 /*
- * This Vortal Cord
- * Shizuka Kamishima - 2015-05-07
+ * This Vortal Cord - Fifth Edition
+ * Shizuka Kamishima - {{ site.time | date: "%F" }}
  */
 
 @import 'globalstyles';
@@ -18,10 +18,10 @@ html {
 }
 
 body {
-  color: $text-color;
+  color: $color-text;
   font-family: $body-font;
   font-size: small;
-  background-color: $page-background-color;
+  background-color: $color-bk-page;
   background-image: url("/assets/img/100-75-5-monochrome.png");
   background-attachment: fixed;
 }
@@ -55,11 +55,11 @@ body {
 header {
   margin-left: -0.5em;
   padding-left: 1.5em;
-  border-bottom: $border-color solid 10px;
+  border-bottom: $color-border solid 10px;
   width: 640px;
   position: fixed;
   padding-top: 4.5em;
-  background-color: $page-background-color;
+  background-color: $color-bk-page;
   background-image: url("/assets/img/100-75-5-monochrome.png");
   z-index: 1;
   
@@ -69,14 +69,14 @@ header {
     line-height: 1em;
     padding: 0 0 0 0.125em;
     margin: 0;
-    color: $light-text-color;
+    color: $color-text-light;
   }
   
   nav {
     line-height: 1.5em;
     margin-left: 0.5em;
     font-weight: bold;
-    color: $light-text-color;
+    color: $color-text-light;
     
     p {
       padding-bottom: 0;
@@ -106,7 +106,7 @@ header {
       }
       
       a {
-        color: $nav-link-color;
+        color: $color-link-nav;
         &.youarehere {
           &:before {
             content: "[";
@@ -116,7 +116,7 @@ header {
           }
         }
         &:visited {
-          color: $nav-link-color;
+          color: $color-link-nav;
         }
       }
     }
@@ -124,12 +124,12 @@ header {
 }
 
 #contentwrapper {
-  background-color: $content-background-color;
+  background-color: $color-bk-content;
   margin-left: 1.5em;
   padding: 11em 2em 1.5em; //large top padding to clear the header
   
   a > img {
-    border-color: $link-color;
+    border-color: $color-link;
     &:hover {
       border-style: dotted;
     }
@@ -143,7 +143,7 @@ article {
 hr {
   clear: both;
   border: 0;
-  border-bottom: $border-color solid 2px;
+  border-bottom: $color-border solid 2px;
   margin-bottom: 1em;
 }
 
@@ -154,10 +154,10 @@ p {
 
 a {
   display: inline-block;
-  color: $link-color;
+  color: $color-link;
   text-decoration: none;
   &:visited {
-    color: $link-color;
+    color: $color-link;
   }
   &:hover, &:active {
     text-decoration: underline;
@@ -181,7 +181,7 @@ a {
 
 strong {
   font-weight: bold;
-  color: $light-text-color;
+  color: $color-text-light;
 }
 
 ul,ol {
@@ -192,8 +192,8 @@ ul,ol {
 
 h1,h2,h3 {
   font-family: $header-font;
-  line-height: 2em;
-  margin-top: -0.25em;
+  line-height: $hx-lineheight;
+  margin-top: 0.5em;
   margin-bottom: 0.25em;
   
   &[id]:before {
@@ -206,15 +206,15 @@ h1,h2,h3 {
 }
 
 h1 {
-  font-size: 1.7em;
+  font-size: $h1-size;
 }
 
 h2 {
-  font-size: 1.35em;
+  font-size: $h2-size;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: $h3-size;
 }
 
 img {
@@ -244,7 +244,7 @@ img {
 }
 
 blockquote {
-  background-color: $blockquote-background-color;
+  background-color: $color-bk-blockquote;
   padding: 1em 1.25em 0;
   margin-bottom: 1em;
   font-style: italic;
@@ -253,14 +253,14 @@ blockquote {
 }
 
 code {
-  background-color: $code-background-color;
+  background-color: $color-bk-code;
   font-family: monospace;
 }
 
 pre {
   padding: 1em;
   margin-bottom: 1.5em;
-  background-color: $code-background-color;
+  background-color: $color-bk-code;
   overflow-x: hidden;
 }
 
@@ -274,7 +274,7 @@ pre {
 footer {
   clear: both;
   padding-top: 1em;
-  border-top: $border-color solid 2px;
+  border-top: $color-border solid 2px;
   font-size: smaller;
   text-align: center;
 }

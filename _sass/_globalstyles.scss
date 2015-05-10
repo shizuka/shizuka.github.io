@@ -1,17 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Iceland|Oswald);
+// This Vortal Cord - Global Styles
+// Shizuka Kamishima - 2015
 
-$fallback-fonts: Verdana, Geneva, sans-serif;
-$body-font:              $fallback-fonts;
-$title-font:  'Iceland', $fallback-fonts;
-$header-font: 'Oswald',  $fallback-fonts;
- 
-$page-background-color:       #eac99a;
-$content-background-color:    #efe4bd;
-$code-background-color:       #f7f2de;
-$blockquote-background-color: #bab293;
-$border-color:                #a39770;
-$text-color:                  #2b2922;
-$light-text-color:            #65655a;
-$link-color:                  #a32500;
-$light-link-color:            #a32500;
-$nav-link-color:              #804500;
+$font-default: Verdana, sans-serif;
+$fonts: (
+  title: 'Iceland',
+  header: 'Economica',
+);
+
+//fonts
+$body-font: $font-default;
+$title-font:  map-get($fonts, title),  $font-default;
+$header-font: map-get($fonts, header), $font-default;
+
+$h1-size: 2em;
+$h2-size: 1.5em;
+$h3-size: 1.25em;
+$hx-lineheight: 1em;
+
+//background colors
+$color-bk-page:       #eac99a;
+$color-bk-content:    #efe4bd;
+$color-bk-code:       #f7f2de;
+$color-bk-blockquote: #bab293;
+$color-border:        #a39770;
+
+//text colors
+$color-text:                  #2b2922;
+$color-text-light:            #65655a;
+$color-link:                  #a32500;
+$color-link-light:            #a32500;
+$color-link-nav:              #804500;
+
+@import 'web-fonts';
+@each $fnt in map-values($fonts) {
+  @include web-fonts($fnt);
+}

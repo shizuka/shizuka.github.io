@@ -1,0 +1,25 @@
+---
+layout: css
+---
+/*
+ * This Vortal Cord - Projects
+ * Shizuka Kamishima - 2015-05-10
+ */
+
+@import 'colors';
+
+.projects {
+  margin-top: 1.5em;
+}
+
+.projects section {
+  clear: both;
+  background-color: #f7f2de;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  padding: 0.5em 0.75em
+}
+
+.projects section h2:before {
+  display: none;
+}

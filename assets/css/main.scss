@@ -223,7 +223,7 @@ img {
   border-radius: 10px;
   
   &.noborder {
-    padding: 0;
+    padding: 3px; //to keep spacing with bordered ones
     border: none;
     border-radius: 0;
   }

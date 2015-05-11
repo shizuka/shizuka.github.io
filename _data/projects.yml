@@ -1,0 +1,59 @@
+# This Vortal Cord - Projects
+# Shizuka Kamishima - 2015
+#
+# In the order defined, so the order displayed
+#
+# - id: project                       (references icon-id.png and id.html)
+#   name: Project Title               (duh)
+#   url: http://example.com           (optional! set to override page link)
+#   nolink: false                     (optional! set true if no page)
+#   noimage: false                    (optional! set true if no icon)
+#   yesborder: false                  (optional! set true for border)
+#   blurb: |                          (short description of project)
+#     foo bar baz
+#     quux fred barney
+#
+
+- id: hikaribot
+  name: HikariBot
+  nolink: true
+  blurb: |
+    IRC bot for Bronystate, providing Twitter posting, and handling of
+    extended amount of user bans
+  
+- id: brstembed
+  name: Bronystate Embed Switcher
+  nolink: true
+  yesborder: true
+  blurb: |
+    Wordpress plugin maintaining a database of stream sources,
+    and user-friendly method of selecting one to embed
+
+- id: skhack
+  name: SK Hack
+  nolink: true
+  blurb: |
+    Implementation of [*The Elements of Computing Systems*](http://www.nand2tetris.org/)  
+    Hack general purpose computer platform
+
+- id: czmix
+  name: Cathedral Mix
+  nolink: true
+  noimage: true
+  blurb: |
+    Hour-long mixes of various trance and progressive tracks
+
+- id: tkj
+  name: The Kamishima Journals
+  nolink: true
+  yesborder: true
+  blurb: |
+    **OFFLINE** // An overly-ambitious fanfiction project for the Myst series
+
+- id: sdb
+  name: Solo Dungeon Bash
+  nolink: true
+  yesborder: true
+  blurb: |
+    **OFFLINE** // My first PHP site, adapting a pencil-and-paper solitaire
+    dungeon-crawler

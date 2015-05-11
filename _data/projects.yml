@@ -16,7 +16,6 @@
 
 - id: hikaribot
   name: HikariBot
-  nolink: true
   blurb: |
     IRC bot for Bronystate, providing Twitter posting, and handling of
     extended amount of user bans

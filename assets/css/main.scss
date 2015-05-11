@@ -179,6 +179,14 @@ a {
   }
 }
 
+:target:before {
+    display: block;
+    content: " "; 
+    margin-top: -7em; 
+    padding-top: 7em; 
+    visibility: hidden; 
+}
+
 strong {
   font-weight: bold;
   color: $color-text-light;
@@ -195,14 +203,7 @@ h1,h2,h3 {
   line-height: $hx-lineheight;
   margin-top: 0.5em;
   margin-bottom: 0.25em;
-  
-  &[id]:before {
-    display: block; 
-    content: " "; 
-    margin-top: -9em; 
-    height: 9em; 
-    visibility: hidden; 
-  }
+
 }
 
 h1 {

@@ -179,12 +179,18 @@ a {
   }
 }
 
+//link target offsetting for the sticky header
 :target:before {
     display: block;
     content: " "; 
     margin-top: -7em; 
-    padding-top: 7em; 
+    height: 7em; 
     visibility: hidden; 
+}
+//special case for footnote sources
+sup:before {
+  display: inline-block !important;
+  padding-top: 15em;
 }
 
 strong {

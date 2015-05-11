@@ -265,10 +265,17 @@ pre {
 }
 
 .footnotes ol {
+  clear: both;
+  border-top: $color-border solid 2px;
   padding-bottom: 0;
+  padding-top: 1em;
   padding-left: 3em;
   font-size: smaller;
   list-style-position: outside;
+  
+  &:before {
+    content: "Footnotes";
+  }
 }
 
 footer {

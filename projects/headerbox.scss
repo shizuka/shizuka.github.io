@@ -1,0 +1,16 @@
+---
+layout: css
+---
+/*
+ * This Vortal Cord - Project Headerbox
+ * Shizuka Kamishima - 2015-05-10
+ */
+
+@import 'colors';
+
+.headerbox {
+  overflow-x: hidden;
+  background-color: $color-bk-code;
+  padding: 1em 1em 1em 2em;
+  border-radius: 5px;
+}

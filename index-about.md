@@ -2,6 +2,7 @@
 title: about
 layout: index
 date: 2015-05-09
+permalink: /about/
 ---
 
 [boxen]: boxen.html

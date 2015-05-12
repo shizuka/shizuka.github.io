@@ -2,7 +2,7 @@
 title: HikariBot IRC Bot
 date: 2015-05-10
 css:
-- headerbox.css
+- /assets/css/headerbox.css
 ---
 
 [abthik]: /about/boxen.html#hikari

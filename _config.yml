@@ -42,3 +42,8 @@ defaults:
       path: "writing"
     values:
       yahLit: true
+  -
+    scope:
+      path: "assets"
+    values:
+      layout: ""

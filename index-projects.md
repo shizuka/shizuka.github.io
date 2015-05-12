@@ -2,7 +2,7 @@
 title: projects
 layout: index
 css:
-- projects.css
+- /assets/css/projects.css
 permalink: /projects/
 ---
 

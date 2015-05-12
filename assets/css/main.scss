@@ -143,8 +143,14 @@ article {
     margin-bottom: 1em;
     
     &:last-child {
-      border: none;
-      margin-bottom: 0;
+      a.top {
+        display: none;
+      }
+    }
+    
+    a.top {
+      font-size: smaller;
+      float: right;
     }
   }
 }
@@ -297,8 +303,6 @@ pre {
 
 footer {
   clear: both;
-  padding-top: 1em;
-  border-top: $color-border solid 2px;
   font-size: smaller;
   text-align: center;
 }

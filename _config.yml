@@ -7,6 +7,8 @@ markdown: kramdown
 highlighter: pygments
 timezone: America/Chicago
 
+permalink: /writing/:categories/:title
+
 kramdown:
   input: GFM
   hard_wrap: false
@@ -22,6 +24,12 @@ defaults:
     values:
       layout: "page"
       author: "Shizuka Kamishima"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      categories: ['']
   - 
     scope:
       path: "about"

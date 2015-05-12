@@ -6,3 +6,6 @@
 #
 - slug: default
   name: General
+
+- slug: catfoo
+  name: Cat Foo

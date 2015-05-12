@@ -1,6 +1,11 @@
         <div id="contentwrapper">
           <article>
-            {{ content }}
+            {% assign sections = content | split:"<p>=====</p>" %}
+            {% for sectioncontent in sections %}
+            <section>
+              {{ sectioncontent }}
+            </section>
+            {% endfor %}
           </article>
           <footer>
             <a href="{{ site.github.repository_url }}" class="noext">this vortal cord</a> | shizuka kamishima | {% if page.date %}{{ page.date }}{% else %}{{ site.time | date: "%F" }}{% endif %}<br/>

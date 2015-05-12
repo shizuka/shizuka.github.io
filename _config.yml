@@ -22,10 +22,6 @@ defaults:
     values:
       layout: "page"
       author: "Shizuka Kamishima"
-      yahAbt: false
-      yahPrj: false
-      yahWrk: false
-      yahLit: false
   - 
     scope:
       path: "about"

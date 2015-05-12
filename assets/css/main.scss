@@ -137,7 +137,16 @@ header {
 }
 
 article {
-  //do we even need this anymore?
+  section {
+    clear: both;
+    border-bottom: $color-border solid 2px;
+    margin-bottom: 1em;
+    
+    &:last-child {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
 }
 
 hr {

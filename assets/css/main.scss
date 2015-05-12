@@ -138,9 +138,18 @@ header {
 
 article {
   section {
-    clear: both;
     border-bottom: $color-border solid 2px;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    
+    &:before {
+      clear: both;
+    }
+    
+    &:first-child {
+      a.top {
+        display: none;
+      }
+    }
     
     &:last-child {
       a.top {
@@ -156,7 +165,6 @@ article {
 }
 
 hr {
-  clear: both;
   border: 0;
   border-bottom: $color-border solid 2px;
   margin-bottom: 1em;
@@ -194,20 +202,6 @@ a {
   }
 }
 
-//link target offsetting for the sticky header
-:target:before {
-    display: block;
-    content: " "; 
-    margin-top: -7em; 
-    height: 7em; 
-    visibility: hidden; 
-}
-//special case for footnote sources
-sup:before {
-  display: inline-block !important;
-  padding-top: 15em;
-}
-
 strong {
   font-weight: bold;
   color: $color-text-light;
@@ -217,14 +211,6 @@ ul,ol {
   line-height: 1.75em;
   padding-bottom: 1.5em;
   padding-left: 1em;
-}
-
-h1,h2,h3 {
-  font-family: $header-font;
-  line-height: $hx-lineheight;
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-
 }
 
 h1 {
@@ -239,6 +225,32 @@ h3 {
   font-size: $h3-size;
 }
 
+
+///offset for links
+:target:before {
+  display: block; 
+  content: " "; 
+  margin-top: -160px; 
+  height: 160px; 
+  visibility: hidden; 
+}//*/
+
+h1,h2,h3 {
+  font-family: $header-font;
+  line-height: $hx-lineheight;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  
+  /*//offset for links
+  &[id]:before {
+    display: block; 
+    content: " "; 
+    margin-top: -160px; 
+    height: 160px; 
+    visibility: hidden; 
+  }//*/
+}
+
 img {
   padding: 1px;
   border: 2px solid #a39770;
@@ -249,6 +261,16 @@ img {
     border: none;
     border-radius: 0;
   }
+}
+
+.h1float {
+  // for images after an h1 that we want aligned with the h1's top
+  margin-top: -2.25em;
+}
+
+.h2float {
+  // for images after an h2 that we want aligned with the h2's top
+  margin-top: -2.25em;
 }
 
 .floatleft {
@@ -303,6 +325,7 @@ pre {
 
 footer {
   clear: both;
+  margin-top: -1em;
   font-size: smaller;
   text-align: center;
 }

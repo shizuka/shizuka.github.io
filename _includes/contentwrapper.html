@@ -1,6 +1,6 @@
         <div id="contentwrapper">
           <article>
-            {% assign sections = content | split:"<p>=====</p>" %}
+            {% assign sections = content | split:"<hr />" %}
             {% for sectioncontent in sections %}
             <section>
               {{ sectioncontent }}

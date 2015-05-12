@@ -1,0 +1,8 @@
+# This Vortal Cord - Tags
+# Shizuka Kamishima - 2015-05-12
+#
+# - slug: tag-a                     (id to use in tags frontmatter)
+#   name: Tag A                     (friendly name for tag)
+#
+- slug: tagbar
+  name: Tag Bar

@@ -42,3 +42,4 @@ defaults:
       path: "writing"
     values:
       yahLit: true
+      category: default

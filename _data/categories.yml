@@ -1,0 +1,8 @@
+# This Vortal Cord - Categories
+# Shizuka Kamishima - 2015-05-12
+#
+# - slug: cat-a                     (id to use in category frontmatter)
+#   name: Category A                (friendly name for category)
+#
+- slug: default
+  name: General

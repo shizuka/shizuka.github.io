@@ -1,0 +1,21 @@
+# This Vortal Cord - Categories
+# Shizuka Kamishima - 2015-05-12
+#
+# cat-a:                      (category id, one per post!)
+#   name: Category A          (friendly name of category)
+#   tags:
+#     tag-a:                  (tag id, for cat indexing)
+#       name: Cat A Tag B     (friendly tag name)
+#     tag-b:
+#       name: Cat A Tag B
+# cat-b:
+#   name: Category B
+#   tags:
+#     tag-c:
+#       name: Cat B Tag C
+#
+misc:
+  name: Cat Default
+  
+testfoo:
+  name: Cat Test Foo

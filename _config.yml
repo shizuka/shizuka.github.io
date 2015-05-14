@@ -29,7 +29,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      categories: ['']
+      categories: ['misc']
   - 
     scope:
       path: "about"

@@ -2,13 +2,13 @@
 title: projects
 layout: index
 css:
-- /assets/css/projects.css
+- /assets/css/sectionbox.css
 permalink: /projects/
 ---
 
 # projects
 
-<div class="projects">
+<div class="sectionboxes">
 {% for project in site.data.projects %}
 <section markdown="1">
   {% unless project.noimage %}

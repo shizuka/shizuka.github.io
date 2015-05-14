@@ -1,7 +1,45 @@
 ---
 ---
 /*
- * This Vortal Cord - Writing - Category Indexes
+ * This Vortal Cord - Writing - Category Styling
  * Shizuka Kamishima - 2015-05-13
  */
+ 
+@import 'colors';
 
+.latestposts {
+  /*
+   * Most recent N posts in category (or over all cats)
+   */
+  background-color: $color-bk-code;
+  margin: 1em 0;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  ul {
+    padding-bottom: 0;
+  }
+}
+
+.catindex {
+  /*
+   * /writing/ -  list of categories
+   * /writing/* - list of lists of pages per tag in category
+   */
+   clear: both;
+   border-top: $color-border 2px solid;
+  
+  section {
+    border-top: $color-border 2px solid;
+    
+    &:last-child {
+      border: 0;
+      margin: 0;
+    }
+  }
+}

@@ -9,7 +9,8 @@ permalink: /writing/
 # writings
 
 <div class="latestposts">
-  <h2 id="latestposts">Recent Pages</h2>
+  <img src="/assets/lit/icon-book_x64.png" class="floatright noborder" />
+  <h3>recent posts</h3>
   <ul>
     {% for post in (site.posts | limit: 5) %}
     <li>
@@ -24,13 +25,15 @@ permalink: /writing/
 </div>
 
 <div class="catindex">
+<section>
+<h2>categories</h2>
+<ul>
 {% for cat in site.categories %}{% assign catname = cat[0] %}{% assign catpages = cat[1] %}
 {% assign catmeta = site.data.categories.[catname] %}
-<section class="category">
-## {{catmeta.name}}
-<ul>
-{% for page in catpages %}<li><a href="{{page.url}}">{{page.title}}</a></li>{% endfor %}
+<li>
+<a class="catlink" href="/writing/{{catname}}/">{{catmeta.name}}</a>
+</li>
+{% endfor %}
 </ul>
 </section>
-{% endfor %}
 </div>

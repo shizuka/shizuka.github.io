@@ -1,6 +1,7 @@
 ---
 title: writing
 layout: index
+yahLit:true
 css: 
 - /assets/lit/catindex.css
 permalink: /writing/

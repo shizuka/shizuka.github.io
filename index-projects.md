@@ -1,6 +1,7 @@
 ---
 title: projects
 layout: index
+yahPrj: true
 css:
 - /assets/css/sectionbox.css
 permalink: /projects/

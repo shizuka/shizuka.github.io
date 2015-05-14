@@ -1,6 +1,7 @@
 ---
 title: writing
 layout: index
+yahLit: true
 permalink: /writing/
 ---
 

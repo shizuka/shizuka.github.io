@@ -1,6 +1,7 @@
 ---
 title: about
 layout: index
+yahAbt: true
 date: 2015-05-09
 permalink: /about/
 ---

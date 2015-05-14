@@ -1,6 +1,7 @@
 ---
 title: resume
 layout: index
+yahRes: true
 date: 2015-05-10
 permalink: /resume/
 ---

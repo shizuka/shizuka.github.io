@@ -1,6 +1,7 @@
 ---
 title: projects
 layout: index
+yahPrj: true
 css:
 - /assets/css/projects.css
 permalink: /projects/

@@ -3,7 +3,7 @@ title: writing
 layout: index
 yahLit: true
 css: 
-- /assets/lit/catindex.css
+- /assets/lit/libindex.css
 permalink: /writing/
 ---
 
@@ -11,29 +11,28 @@ permalink: /writing/
 
 <div class="latestposts">
   <img src="/assets/lit/icon-book_x64.png" class="floatright noborder" />
+  <h2><a href="/writing/blog/">Shizuka Hokura</a></h2>
   <h3>recent posts</h3>
   <ul>
-    {% for post in (site.posts | limit: 5) %}
+    {% for post in (site.posts | limit: 3) %}
     <li>
+      <p class="posthead">
+        <a class="postlink" href="{{ post.url }}">{{ post.title }}</a> // <span class="postdate">{{ post.date }}</span>
+      </p>
       <p class="postinfo">
-        <a class="postlink" href="{{ post.url }}">{{ post.title }}</a>
-        <span class="postcat">{{ post.categories }}</span>
-        <span class="posttags">{{ post.tags | join: "/" }}</span>
+        in categories | tags, tags, tags
       </p>
     </li>
     {% endfor %}
   </ul>
 </div>
 
-<div class="catindex">
+<div class="libindex">
 <section>
-<h2>categories</h2>
+<h2>libraries</h2>
 <ul>
-{% for cat in site.categories %}{% assign catname = cat[0] %}{% assign catpages = cat[1] %}
-{% assign catmeta = site.data.categories.[catname] %}
-<li>
-<a class="catlink" href="/writing/{{catname}}/">{{catmeta.name}}</a>
-</li>
+{% for lib in site.data.libraries %}
+<li><a class="liblink" href="/writing/{{lib.id}}/">{{lib.name}}</a>
 {% endfor %}
 </ul>
 </section>

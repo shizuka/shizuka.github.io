@@ -8,7 +8,7 @@ highlighter: pygments
 timezone: America/Chicago
 
 # blog posts
-permalink: /writing/blog/:categories/:title
+permalink: /writing/blog/:categories/:year-:month-:day-:title.html
 
 kramdown:
   input: GFM
@@ -21,7 +21,7 @@ sass:
 collections:
   writing:
     output: true
-    permalink: /writing/:path/:name
+    permalink: /writing/:path/:name.html
   
 defaults:
   -
@@ -33,7 +33,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: writing
     values:
       categories: ['misc']
   - 

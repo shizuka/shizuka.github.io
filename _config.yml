@@ -7,7 +7,8 @@ markdown: kramdown
 highlighter: pygments
 timezone: America/Chicago
 
-permalink: /writing/:categories/:title
+# blog posts
+permalink: /writing/blog/:categories/:title
 
 kramdown:
   input: GFM
@@ -16,6 +17,11 @@ kramdown:
 
 sass:
     sass_dir: _sass
+    
+collections:
+  writing:
+    output: true
+    permalink: /writing/:path/:name
   
 defaults:
   -

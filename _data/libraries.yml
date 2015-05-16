@@ -29,5 +29,5 @@
 - id: misc
   name: Miscellaneous
 
-- id: libfoo
+- id: foo
   name: Foo Library

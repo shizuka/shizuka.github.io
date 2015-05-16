@@ -49,16 +49,69 @@
   }
 }
 
-.postlink {
+.liblink {
+  /*
+   * /writing/  - individual link to library
+   * for increasing size etc
+   */
+}
 
+.postlink {
+  font-weight: bold;
 }
 
 .postinfo {
   color: $color-text-light;
-  font-weight: bold;
   font-size: smaller;
+  padding-left: 1ex;
   
   a {
-    font-weight: normal;
+    color: $color-link-light;
+  }
+  
+  .lib {
+    &:before {
+      font-family: FontAwesome;
+      padding-right: 0.5ex;
+      content: "\f02d";
+    }
+  }
+  
+  .book {
+    /*
+    &:before {
+      font-family: FontAwesome;
+      padding-right: 0.5ex;
+      content: "\f02e";
+    }
+    */
+  }
+  
+  .date {
+    &:before {
+      font-family: FontAwesome;
+      padding-right: 0.5ex;
+      content: "\f017";
+    }
+  }
+  
+  .tags {
+    display: inline;
+    
+    &:before {
+      font-family: FontAwesome;
+      padding-right: 0.5ex;
+      content: "\f02b";
+    }
+    
+    li {
+      list-style-type: none;
+      display: inline;
+      
+      &:not(:last-child):after {
+        content: ",";
+      }
+    }
   }
 }
+

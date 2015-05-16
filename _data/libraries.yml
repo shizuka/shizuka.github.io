@@ -6,7 +6,7 @@
 # Library = category, one per page
 # Book = tag, *one* per page
 #
-# - id: lib-a                 (library id)
+# lib-a:                      (library id)
 #   name: Library A           (friendly name)
 #   books:
 #     bk-a:                   (book id)
@@ -14,7 +14,7 @@
 #     bk-b:
 #       name: Lib A Book B
 #
-# - id: lib-b
+# lib-b: ...
 #
 # ---
 # title: Foo Bar
@@ -28,6 +28,9 @@
 
 misc:
   name: Miscellaneous
+  books:
+    bka:
+      name: Misc Book A
 
 foo:
   name: Foo Library

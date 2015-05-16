@@ -21,7 +21,7 @@ sass:
 collections:
   writing:
     output: true
-    permalink: /writing/:path/:name.html
+    permalink: /writing/:path.html
   
 defaults:
   -
@@ -33,9 +33,16 @@ defaults:
   -
     scope:
       path: ""
+      type: posts
+    values:
+      yahLit: true
+  -
+    scope:
+      path: ""
       type: writing
     values:
-      categories: ['misc']
+      library: 'misc'
+      yahLit: true
   - 
     scope:
       path: "about"

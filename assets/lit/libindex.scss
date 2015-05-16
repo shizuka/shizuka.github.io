@@ -48,3 +48,17 @@
     }
   }
 }
+
+.postlink {
+
+}
+
+.postinfo {
+  color: $color-text-light;
+  font-weight: bold;
+  font-size: smaller;
+  
+  a {
+    font-weight: normal;
+  }
+}

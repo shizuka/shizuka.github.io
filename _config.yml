@@ -48,7 +48,7 @@ defaults:
       library: 'misc'
       yahLit: true
       layoutcss:
-        - /assets/lit/libindex.css
+        - /assets/lit/library.css
   - 
     scope:
       path: "about"
@@ -69,6 +69,8 @@ defaults:
       path: "writing"
     values:
       yahLit: true
+      layoutcss:
+        - /assets/lit/library.css
   -
     scope:
       path: "assets"

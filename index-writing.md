@@ -43,8 +43,8 @@ permalink: /writing/
   </ul>
 </div>
 
-<div class="libindex">
-    <h2>The Library</h2>
+<div class="liblist">
+    <h1>The Library</h1>
     <ul>
       <li>
         <img src="/assets/lit/icon-sakura_x32.png" class="floatleft noborder" />

@@ -7,6 +7,10 @@
  
 @import 'colors';
 
+.bigtitle {
+  font-size: 2.25em;
+}
+
 .latestposts {
   /*
    * Most recent N posts in blog
@@ -31,7 +35,7 @@
   }
 }
 
-.libindex {
+.liblist {
   /*
    * /writing/            - one section, list of libraries
    */

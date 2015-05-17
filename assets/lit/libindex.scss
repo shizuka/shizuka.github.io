@@ -115,10 +115,10 @@
   
   .tags {
     display: inline;
+    padding-left: 0.5em;
     
     &:before {
       font-family: FontAwesome;
-      padding-right: 0.5ex;
       content: "\f02b";
     }
     

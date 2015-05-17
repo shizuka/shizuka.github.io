@@ -1,0 +1,33 @@
+---
+---
+/*
+ * This Vortal Cord - Shizuka Hokura Styles
+ * Shizuka Kamishima - 2015-05-16
+ */
+
+@import 'colors';
+
+@import '/assets/lit/libindex.css';
+
+#contentwrapper article > section > h1 {
+  font-size: 2.5em;
+}
+
+.postindex {
+  margin-top: 1em;
+  ul {
+    li {
+      list-style-type: circle;
+    }
+  }
+}
+
+.postinfo {
+  display: block;
+  margin-top: -0.5em;
+  
+  .tags {
+    padding: 0;
+    padding-left: 0.5em;
+  }
+}

@@ -7,10 +7,8 @@ css:
 permalink: /writing/
 ---
 
-# writings
-
 <div class="latestposts">
-  <h3>recently published</h3>
+  <h3>recent library pages</h3>
   <ul>
     {% assign pages = (site.writing | sort: "date" | reverse) %}
     {% for page in pages limit: 3 %}
@@ -26,36 +24,42 @@ permalink: /writing/
   </ul>
 </div>
 
-<div class="libindex">
-  <section>
-    <h2><a class="bloglink" href="/writing/blog/">Shizuka Hokura</a></h2>
-    <div class="latestposts">
-      <h3>recent posts</h3>
-      <ul>
-        {% for post in site.posts | limit: 3 %}
-        <li><a class="postlink" href="{{post.url}}">{{post.title}}</a>
-        <span class="postinfo"> // <span class="date">{{post.date | date: "%F"}}</span>
-          {% if post.tags != empty %}
-            <ul class="tags">
-            {% for tag in post.tags %}
-            <li><a href="/writing/blog/tags/#{{tag}}">{{ tag }}</a></li>
-            {% endfor %}
-            </ul>
-          {% endif %}
-        </span>
-        </li>
+<div class="latestposts">
+  <h3>recent blog posts</h3>
+  <ul>
+    {% for post in site.posts | limit: 3 %}
+    <li><a class="postlink" href="{{post.url}}">{{post.title}}</a>
+    <span class="postinfo"> // <span class="date">{{post.date | date: "%F"}}</span>
+      {% if post.tags != empty %}
+        <ul class="tags">
+        {% for tag in post.tags %}
+        <li><a href="/writing/blog/tags/#{{tag}}">{{ tag }}</a></li>
         {% endfor %}
-      </ul>
-    </div>
-  </section>
-  <section>
-    <h2>libraries</h2>
+        </ul>
+      {% endif %}
+    </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="libindex">
+    <h2>The Library</h2>
     <ul>
+      <li>
+        <img src="/assets/lit/icon-sakura_x32.png" class="floatleft noborder" />
+        <a class="liblink" href="/writing/blog/">shizuka hokura</a>
+        <p class="libinfo">a small place for small thoughts</p>
+      </li>
       {% for lib in site.data.libraries %}
       {% assign libid = lib|first %}
       {% assign libmeta = lib|last %}
-      <li><a class="liblink" href="/writing/{{libid}}/">{{libmeta.name}}</a>
+      <li>
+        <i class="fa fa-book"></i>
+        <a class="liblink" href="/writing/{{libid}}/">{{libmeta.name}}</a>
+        {% if libmeta.desc %}
+          <p class="libinfo">{{libmeta.desc}}</p>
+        {% endif %}
       {% endfor %}
     </ul>
-  </section>
 </div>

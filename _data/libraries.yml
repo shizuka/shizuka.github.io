@@ -8,6 +8,7 @@
 #
 # lib-a:                      (library id)
 #   name: Library A           (friendly name)
+#   desc: foo bar baz quux    (optional! description for library)
 #   books:
 #     bk-a:                   (book id)
 #       name: Lib A Book A    (friendly name)
@@ -28,6 +29,7 @@
 
 misc:
   name: Miscellaneous
+  desc: For pages not in their own category
   books:
     bka:
       name: Misc Book A

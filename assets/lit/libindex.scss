@@ -27,14 +27,13 @@
   
   ul {
     padding-bottom: 0;
+    line-height: 1.35em;
   }
 }
 
 .libindex {
   /*
    * /writing/            - one section, list of libraries
-   * /writing/blog/tags/  - many sections, lists of posts by tag
-   * /writing/[library]/  - many sections, lists of pages by book
    */
    clear: both;
    border-top: $color-border 2px solid;
@@ -47,6 +46,17 @@
       margin: 0;
     }
   }
+  
+  ul {
+    padding-left: 0;
+    li {
+      margin: 0.5em 0;
+      list-style-type: none;
+      background-color: $color-bk-code;
+      border-radius: 10px;
+      padding: 0.5em 0.5em 0.5em 0.75em;
+    }
+  }
 }
 
 .liblink {
@@ -54,6 +64,14 @@
    * /writing/  - individual link to library
    * for increasing size etc
    */
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.libinfo {
+  font-size: smaller;
+  color: $color-text-light;
+  padding-bottom: 0;
 }
 
 .postlink {

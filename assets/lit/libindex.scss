@@ -11,8 +11,8 @@
   /*
    * Most recent N posts in blog
    */
-  background-color: $color-bk-code;
-  margin: 1em 0;
+  background-color: mix($color-bk-code, $color-bk-content);
+  margin-bottom: 0.5em;
   border: 0;
   border-radius: 10px;
   padding: 0.5em 0.5em 0.5em 0.75em;
@@ -50,7 +50,7 @@
   ul {
     padding-left: 0;
     li {
-      margin: 0.5em 0;
+      margin: 1em 0;
       list-style-type: none;
       background-color: $color-bk-code;
       border-radius: 10px;

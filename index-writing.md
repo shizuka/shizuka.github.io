@@ -51,7 +51,8 @@ permalink: /writing/
         <a class="liblink" href="/writing/blog/">shizuka hokura</a>
         <p class="libinfo">a small place for small thoughts</p>
       </li>
-      {% for lib in site.data.libraries %}
+      {% assign libs = (site.data.libraries | sort) %}
+      {% for lib in libs %}
       {% assign libid = lib|first %}
       {% assign libmeta = lib|last %}
       <li>

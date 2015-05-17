@@ -36,6 +36,7 @@ defaults:
       type: posts
     values:
       yahLit: true
+      css: ['/assets/lit/blog.css']
   -
     scope:
       path: ""

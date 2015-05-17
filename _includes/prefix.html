@@ -16,6 +16,9 @@ Hosted on Github Pages
     {% if page.css %}{% for css in page.css %}
     <link rel='stylesheet' type='text/css' href='{{ css }}'>
     {% endfor %}{% endif %}
+    {% if page.layoutcss %}{% for css in page.layoutcss %}
+    <link rel='stylesheet' type='text/css' href='{{ css }}'>
+    {% endfor %}{% endif %}
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js'></script>
     <script type='text/javascript'>
       //disable auto language detection
@@ -26,7 +29,7 @@ Hosted on Github Pages
     {% if page.prejs %}{% for prejs in page.prejs %}
     <script type='text/javascript' src='{{ prejs }}'></script>
     {% endfor %}{% endif %}
-    <title>{% if page.title %}{{page.title}} | {% endif %}{{site.title}}</title>
+    <title>{% if page.title %}{{page.title}} | {% endif %}{% if include.midtitle %}{{include.midtitle}} | {% endif %}{{site.title}}</title>
   </head>
   <body>
     <div id="wrapper">

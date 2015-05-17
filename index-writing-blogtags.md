@@ -1,5 +1,6 @@
 ---
 title: Tags Index
+permalink: /writing/blog/tags.html
 parents:
 - url: /writing/blog/
   title: blog

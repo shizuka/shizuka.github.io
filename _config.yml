@@ -35,12 +35,10 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: post
       yahLit: true
-      css: 
+      layoutcss:
         - /assets/lit/blog.css
-      parents: 
-        - url: /writing/blog/
-          title: "blog"
   -
     scope:
       path: ""

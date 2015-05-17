@@ -33,7 +33,7 @@ permalink: /writing/
       {% if post.tags != empty %}
         <ul class="tags">
         {% for tag in post.tags %}
-        <li><a href="/writing/blog/tags/#{{tag}}">{{ tag }}</a></li>
+        <li><a href="/writing/blog/tags.html#{{tag}}">{{ tag }}</a></li>
         {% endfor %}
         </ul>
       {% endif %}

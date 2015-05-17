@@ -13,3 +13,4 @@ $color-text:                  #2b2922;
 $color-text-light:            #65655a;
 $color-link:                  #a32500;
 $color-link-nav:              #804500;
+$color-link-light:            mix($color-link, $color-link-nav);

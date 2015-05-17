@@ -7,8 +7,3 @@
 #   desc: Tag B
 #
 
-foo:
-  desc: Foo Tag
-  
-bar:
-  desc: Bar Tag

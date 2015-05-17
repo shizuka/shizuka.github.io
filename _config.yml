@@ -44,8 +44,11 @@ defaults:
       path: ""
       type: writing
     values:
+      layout: libpage
       library: 'misc'
       yahLit: true
+      layoutcss:
+        - /assets/lit/libindex.css
   - 
     scope:
       path: "about"
@@ -71,3 +74,4 @@ defaults:
       path: "assets"
     values:
       layout: ""
+      

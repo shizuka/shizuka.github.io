@@ -1,5 +1,5 @@
 ---
-title: Tags
+title: Tags Index
 parents:
 - url: /writing/blog/
   title: blog

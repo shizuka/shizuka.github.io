@@ -1,16 +1,14 @@
-{% unless include.notitle %}
-  {% if page.title %}
-    <p>
-      {% if page.parents %}
-        {% for parent in page.parents %}
-          {% if parent.url %}
-          <a href='{{ parent.url }}'>{{ parent.title | downcase }}</a> / 
-          {% else %}
-          {{ parent.title | downcase }}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      {{ page.title | downcase }}
-    </p>
-  {% endif %}
-{% endunless %}
+{% if page.title %}
+  <p>
+    {% if page.parents %}
+      {% for parent in page.parents %}
+        {% if parent.url %}
+        <a href='{{ parent.url }}'>{{ parent.title | downcase }}</a> / 
+        {% else %}
+        {{ parent.title | downcase }}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {{ page.title | downcase }}
+  </p>
+{% endif %}

@@ -1,0 +1,9 @@
+<header>
+  <h1>this vortal cord</h1>
+  <nav>
+    <ul>
+      <li><a href='/about/'{% if page.yahAbt %}class='youarehere'{% endif %}>about</a></li>
+      <li><a href='/resume/'{% if page.yahRes %}class='youarehere'{% endif %}>resume</a></li>
+      <li><a href='/projects/'{% if page.yahPrj %}class='youarehere'{% endif %}>projects</a></li>
+      <li><a href='/writing/'{% if page.yahLit %}class='youarehere'{% endif %}>writing</a></li>
+    </ul>

@@ -22,6 +22,31 @@
   }
 }
 
+.tagindex {
+  @extend .postindex;
+  
+  .taginfo {
+    border-bottom: $color-border 2px solid;
+  }
+  
+  h2 {
+    color: $color-text-light;
+    display: inline;
+  }
+  
+  .tagdesc {
+    display: inline;
+    font-size: smaller;
+  }
+  
+  .tagbox:last-child {
+    ul {
+      padding-bottom: 1em;
+    }
+  }
+  
+}
+
 .postinfo {
   display: block;
   margin-top: -0.5em;

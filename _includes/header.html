@@ -7,8 +7,10 @@
               <li><a href='/projects/'{% if page.yahPrj %}class='youarehere'{% endif %}>projects</a></li>
               <li><a href='/writing/'{% if page.yahLit %}class='youarehere'{% endif %}>writing</a></li>
             </ul>
-            {% unless include.notitle %}
-            {% if page.title %}<p>{% if page.parents %}{% for parent in page.parents %}<a href='{{ parent.url }}'>{{ parent.title }}</a> / {% endfor %}{% endif %}{{ page.title }}</p>{% endif %}
-            {% endunless %}
+            {% if include.lib %}
+              <!-- for replacing the titling logic -->
+            {% else %}
+              {% include pagetitle-parents.html %}
+            {% endif%}
           </nav>
         </header>

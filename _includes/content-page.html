@@ -1,0 +1,7 @@
+{% assign sections = content | split:"<hr />" %}
+{% for sectioncontent in sections %}
+<section>
+  {{ sectioncontent }}
+  <a class="top" href="#">top</a>
+</section>
+{% endfor %}

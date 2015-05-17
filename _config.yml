@@ -7,6 +7,9 @@ markdown: kramdown
 highlighter: pygments
 timezone: America/Chicago
 
+# blog posts
+permalink: /writing/blog/:year-:month-:day-:title.html
+
 kramdown:
   input: GFM
   hard_wrap: false
@@ -14,6 +17,11 @@ kramdown:
 
 sass:
     sass_dir: _sass
+    
+collections:
+  writing:
+    output: true
+    permalink: /writing/:path.html
   
 defaults:
   -
@@ -22,6 +30,25 @@ defaults:
     values:
       layout: "page"
       author: "Shizuka Kamishima"
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      yahLit: true
+      layoutcss:
+        - /assets/lit/blog.css
+  -
+    scope:
+      path: ""
+      type: writing
+    values:
+      layout: libpage
+      library: 'misc'
+      yahLit: true
+      layoutcss:
+        - /assets/lit/library.css
   - 
     scope:
       path: "about"
@@ -42,8 +69,11 @@ defaults:
       path: "writing"
     values:
       yahLit: true
+      layoutcss:
+        - /assets/lit/library.css
   -
     scope:
       path: "assets"
     values:
       layout: ""
+      

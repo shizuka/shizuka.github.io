@@ -1,0 +1,34 @@
+# This Vortal Cord - Writing Libraries
+# Shizuka Kamishima - 2015-05-14
+#
+# Categories, but for the writing collection
+# Displayed alphabetically on /writing/index.html
+#
+# Library = category, one per page
+# Book = tag, *one* per page
+#
+# lib-a:                      (library id)
+#   name: Library A           (friendly name)
+#   desc: foo bar baz quux    (optional! description for library)
+#   books:                    (optional if no books)
+#     bk-a:                   (book id)
+#       name: Lib A Book A    (friendly name)
+#       desc: it's a book     (optional! description for book)
+#     bk-b:
+#       name: Lib A Book B
+#
+# lib-b: ...
+#
+# ---
+# title: Foo Bar
+# library: foolib
+# book: bazbar
+# ---
+#
+# 'misc' is the default lib for pages that do not specify
+# if the page needs a book, it should be in a library
+#
+
+misc:
+  name: Miscellaneous
+  desc: For pages not in their own category

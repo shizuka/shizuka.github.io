@@ -151,6 +151,7 @@ article {
     }
     
     &:last-child {
+      border-bottom: none;
       a.top {
         display: none;
       }
@@ -325,6 +326,8 @@ pre {
 footer {
   clear: both;
   margin-top: -1em;
+  padding-top: 0.5em;
+  border-top: $color-border 2px solid;
   font-size: smaller;
   text-align: center;
 }

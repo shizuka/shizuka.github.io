@@ -1,5 +1,6 @@
 {% assign lib = site.data.libraries.[page.library] %}
-{% include prefix.html midtitle=lib.name %}
+{% capture mid %}{% if page.book %}{{lib.books.[page.book].name}} | {% endif %}{{ lib.name }}{% endcapture %}
+{% include prefix.html midtitle=mid %}
 {% include headerprefix.html %}
 {% include pagetitle-libpage.html %}
 {% include headerpostfix.html %}

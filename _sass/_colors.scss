@@ -12,5 +12,5 @@ $color-border:        #a39770;
 $color-text:                  #2b2922;
 $color-text-light:            #65655a;
 $color-link:                  #a32500;
-$color-link-light:            #e25e38;
+$color-link-light:            lighten($color-link, 30%);
 $color-link-nav:              #804500;

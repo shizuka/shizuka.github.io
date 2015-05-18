@@ -30,7 +30,7 @@
 
 - id: skhack
   name: SK Hack
-  nolink: true
+  url: https://bitbucket.org/shizuka/sk-hack
   blurb: |
     Implementation of [*The Elements of Computing Systems*](http://www.nand2tetris.org/)  
     Hack general purpose computer platform

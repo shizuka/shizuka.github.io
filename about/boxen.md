@@ -21,17 +21,19 @@ date: 2015-05-09
 
 ## asuka {#asuka}
 
-### desktop / windows 7 professional
+### desktop / windows 10 professional
+
+[win10]: /writing/blog/2015-07-30-win10.html
 
 ```
 Asuka 2.0:
 CPU: Intel Pentium G3258 3.6GHz
 RAM: 8GB
 GPU: ATI Radeon HD 5750
-HDD: Internal C: 0.5TB - OS drive
-     Internal L: 1.5TB - previous OS drive
+HDD: Internal C: 1.5TB - primary drive
      External N:   2TB - media library
      External R:   2TB - general storage
+     On Standby: 500GB - Windows 7, in case of disaster
 
 Asuka 1.0:
 MDL: Gateway DX4320
@@ -72,15 +74,14 @@ motherboard, and a new CPU not ravaged by years of overheating. Asuka 2.0
 kept the RAM, GPU, and hard drives of the original, and my first experience
 properly building a desktop went well. Unfortunately, I was misled on the
 abilities of the replacement CPU, with only two threads instead of six.
-More power per thread, but the raw multitasking ability was cut short. As a
-result, streaming became limited to the less CPU-intensive games, to avoid
-bottlenecking on the encoders, and occasionally Winamp can get hung up on
-programs thinking abnormally hard.
+More power per thread, but the raw multitasking ability was cut short.
 
-Still, the new motherboard has capacity for a great deal more memory than I
-can fathom needing, and the chassis will happily seat an SSD someday. Asuka
-2.0 might not have the raw grunt of her previous incarnation, but she's
-still the workhorse of the family.
+At the end of July 2015, [with the release of Windows 10][win10], I spent two
+days wrestling that processor into accepting the new OS, hampered by a broken
+update that prevented booting with both cores enabled. It was stressful, and
+tiring, straining my ability to gather useful troubleshooting information from
+an internet of "it works for me!", but I was ultimately successful. She's still
+a bit on the weak side, but is doing more with that weakness than before.
 
 -----
 

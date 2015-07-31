@@ -30,10 +30,10 @@ Asuka 2.0:
 CPU: Intel Pentium G3258 3.6GHz
 RAM: 8GB
 GPU: ATI Radeon HD 5750
-HDD: Internal C: 1.5TB - primary drive
-     External N:   2TB - media library
-     External R:   2TB - general storage
-     On Standby: 500GB - Windows 7, in case of disaster
+HDD: Internal C: 1.5TB - Asuka, primary drive
+     External N:   2TB - Nigoki, media library
+     External R:   2TB - Rei, general storage
+     In storage: 500GB - Langley, Windows 7, in case of disaster
 
 Asuka 1.0:
 MDL: Gateway DX4320

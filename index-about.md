@@ -2,7 +2,7 @@
 title: about
 layout: index
 yahAbt: true
-date: 2015-05-09
+date: 2015-08/17
 permalink: /about/
 ---
 
@@ -14,7 +14,7 @@ permalink: /about/
 {: .floatright}
 
 > floating on the vast and infinite net  
-> tethered only by [this vortal cord](vortspeech.html)
+> tethered only by [this vortal cord](/writing/gamelit/vortspeech.html)
 
 My name is Shizuka Kamishima. I'm a writer, programmer, and gamer living in
 the north suburbs of the Twin Cities, Minnesota. I spend most of my time

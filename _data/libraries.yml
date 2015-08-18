@@ -32,3 +32,6 @@
 misc:
   name: Miscellaneous
   desc: For pages not in their own category, page links may change any time
+gamelit:
+  name: Game Literature
+  desc: Bits of particularly outstanding writing from my gaming library

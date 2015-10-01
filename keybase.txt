@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/kamishizuka
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.vortalcord.net
+  * I am kamishizuka (https://keybase.io/kamishizuka) on keybase.
+  * I have a public key with fingerprint 024C 6311 45DF 48F8 6191  6185 C229 C6F9 0A5B 8964
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01012443e2519e8eab37de8dd7c5303809c0cfaa5777fe2b2dfe70949a404def44d80a",
+            "fingerprint": "024c631145df48f861916185c229c6f90a5b8964",
+            "host": "keybase.io",
+            "key_id": "c229c6f90a5b8964",
+            "kid": "01012443e2519e8eab37de8dd7c5303809c0cfaa5777fe2b2dfe70949a404def44d80a",
+            "uid": "84be9c7827e280aa6fb3387166d7a119",
+            "username": "kamishizuka"
+        },
+        "service": {
+            "hostname": "www.vortalcord.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1443685585,
+    "expire_in": 157680000,
+    "prev": "f363b287b26f80d751f305eccc3d561975a13ec32f363a9064692e237f2602ab",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.47
+Comment: https://keybase.io/crypto
+
+yMNIAnicrVJrTBRXFF5KqbiCLtWytF2LThFEV5z3YxUtjxIELCW22hTLcmfmDozA
+zLq7LN0StBAtJZoiNEJbIiaEEF+0wdYEY1gLImLbpBIwpK2VBhC0xK4Fg5AI2xli
+//Vn75+be873fec7557e8GCDMagnvm/emFsjBv3YfbrUsDdsfKAc4VXRi9jKkSK4
+dMFiEbrc9iJZRGwIiqEYTpIExCmMgywEPMGIkBVFRqAIlGBRTkAFCQCKYRgJ4jwu
+SpBBOZIDJEqKUCJJkUUBYkUkWSmATodTVty6LE4KNIFhJCVKJCuxNMZhNMZSAo5z
+Ai1xKKB4lqNJjViounSGZo4HLpggq1pMe9iX7P0H/n/2Xbokx5I85ASGxRmIa3FA
+SzxBsAxG0yIDMIzTgS7oVEAJ1L2CEtlVKH9UWgSQCiuiJTyyAPXZ6s08A5WVlSV4
+VKcbFAuqU0xQoFsTcThVtyqoxVq+0O122HS62+tYwkPe/kzJzsuKqM1TI3ig0yWr
+CmLDNKTglnVpTOubZimKpawI/NAhO6Fd1hEUQ7OodvQy0KNJSgRN8DjL8DgtsajI
+UJhEoBQUBIEQKe1LGApgBBQIXAcCDqVJmsMhTjASTqM44BG9t4OKitgYzSYo0CRd
+coEC3KVOiFT0dO9/3hBkNLwQ8py+ZwbjctO/2/eSwWQ4MXLJ78u5O3gnatVM4P79
+9l/OrsqZ6nrdkmobO5iXUvc4bbBza9TAm2bmq3TfvdCt3yybmwukbamazmvcg1o+
+XZxJhqPZPx1fjK3x+j62N1/KaLo+eeyz+fdyz8x+e4X4gQG/BoxiTWxP8J2Qzp83
++Sa+8E6cSMlCE83pO5gYMzDZvu7ou5BS+X5W4sNdN8eG91jGD515NZyd7E1qayJG
+j79T0tFYtTNms4TvPvBJ51+TDx4GdZVMj3UE17WNR3sX8pMrV8b2Z550PMbXplX3
+PRiZxX2BsfYDfUJ8wxPk2jr6iJpXJ8bNe7oMDUHLzMpgeeDkRH7rxaHiQOW1639G
+3860Hy71PKroojeHTaNt/qNb5k839W+AyVWG8Phj9ftz62N/U8k8a8a+Wl/YdhNe
+3vKBPT8pPFDv3bbPnHn5/NmBtSEN50ZbmxcihtZfaZ8bTYTYAMjo/+Mp4eSX+xMu
+ntp7q3bDoeLvz09Nko7V4o20q9lvZz6RV5g+XzdlLW/7PfUUO5VXffV2wrboc6kj
+i1ZuLNuSk/nosPxd3JGjYU9rBydXDm0cHhGVtqTGy7tejkrrXWM2rm7H1sy8Eq0k
+BrdvKmhpNm3nL0RI/YWWxLtZkTc8mKUiq7Vl/U37i8ORK9546+9hGHkrIvXd9HvT
+X+6ICa2ej9v4Wle3f3fybFToguQv/Aeijr31
+=OE1/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kamishizuka
+
+==================================================================

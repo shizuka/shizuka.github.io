@@ -135,34 +135,33 @@ header {
   }
 }
 
-article {
-  section {
-    border-bottom: $color-border solid 2px;
-    margin-bottom: 1.5em;
-    
-    &:before {
-      clear: both;
-    }
-    
-    &:first-child {
-      a.top {
-        display: none;
-      }
-    }
-    
-    &:last-child {
-      border-bottom: none;
-      a.top {
-        display: none;
-      }
-    }
-    
+section {
+  border-bottom: $color-border solid 2px;
+  margin-bottom: 1.5em;
+  
+  &:before {
+    clear: both;
+  }
+  
+  &:first-child {
     a.top {
-      font-size: smaller;
-      float: right;
+      display: none;
     }
   }
+  
+  &:last-child {
+    border-bottom: none;
+    a.top {
+      display: none;
+    }
+  }
+  
+  a.top {
+    font-size: smaller;
+    float: right;
+  }
 }
+
 
 hr {
   border: 0;

@@ -6,34 +6,13 @@
 # - id: project                       (references icon-id.png and id.html)
 #   name: Project Title               (duh)
 #   url: http://example.com           (optional! set to override page link)
-#   nolink: false                     (optional! set true if no page)
-#   noimage: false                    (optional! set true if no icon)
-#   yesborder: false                  (optional! set true for border)
+#   nolink: false                     (assumes /projects/id.html)
+#   noimage: false                    (assumes /projects/icon-id.png)
+#   yesborder: false                  (optional! set true for img border)
 #   blurb: |                          (short description of project)
 #     foo bar baz
 #     quux fred barney
 #
-
-- id: hikaribot
-  name: HikariBot
-  blurb: |
-    IRC bot for Bronystate, providing Twitter posting, and handling of
-    extended amount of user bans
-  
-- id: brstembed
-  name: Bronystate Embed Switcher
-  nolink: true
-  yesborder: true
-  blurb: |
-    Wordpress plugin maintaining a database of stream sources,
-    and user-friendly method of selecting one to embed
-
-- id: skhack
-  name: SK Hack
-  url: https://bitbucket.org/shizuka/sk-hack
-  blurb: |
-    Implementation of [*The Elements of Computing Systems*](http://www.nand2tetris.org/)  
-    Hack general purpose computer platform
 
 - id: czmix
   name: Cathedral Mix
@@ -41,17 +20,41 @@
   blurb: |
     Hour-long mixes of various trance and progressive tracks
 
-- id: tkj
-  name: The Kamishima Journals
-  nolink: true
+- id: brst3
+  name: Bronystate 3.0
+  url: https://github.com/Bronystate/brstv3
   yesborder: true
   blurb: |
-    **OFFLINE** // An overly-ambitious fanfiction project for the Myst series
+    Third generation platform for [Bronystate](http://www.bronystate.net),
+    a video streaming site for bronies
 
-- id: sdb
-  name: Solo Dungeon Bash
-  nolink: true
+- id: kestrelbot
+  name: Kestrel IRC Bot
+  url: https://github.com/shizuka/kestrelirc
+  noimage: true
+  blurb: |
+    Second generation IRC bot for Bronystate, based on HikariBot, in development
+
+- id: vortalcord
+  name: This Vortal Cord v5
+  url: https://github.com/shizuka/shizuka.github.io
+  noimage: true
+  blurb: |
+    Fifth generation personal site, this time powered by Jekyll
+
+- id: hikaribot
+  name: HikariBot
+  url: https://github.com/shizuka/hikaribot
+  blurb: |
+    IRC bot for Bronystate, providing Twitter posting, and handling of
+    extended amount of user bans -- **DISCONTINUED**
+  
+- id: brstembed
+  name: Bronystate 2.0 Embed Switcher
+  url: https://bitbucket.org/shizuka/sk-bs-theater
   yesborder: true
   blurb: |
-    **OFFLINE** // My first PHP site, adapting a pencil-and-paper solitaire
-    dungeon-crawler
+    Wordpress plugin maintaining a database of stream sources,
+    and user-friendly method of selecting one to embed -- **DISCONTINUED**
+
+

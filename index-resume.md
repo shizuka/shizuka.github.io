@@ -10,10 +10,11 @@ permalink: /resume/
 
 - email: <shizuka@vortalcord.net>
 - twitter: [@kamishizuka](https://twitter.com/kamishizuka)
-- github: [shizuka](https://github.com/shizuka "doesn't yet get as much love as it should")
-- bitbucket: [shizuka](https://bitbucket.org/shizuka "where most of my code is")
+- github: [shizuka](https://github.com/shizuka "where most of my code lives")
+- bitbucket: [shizuka](https://bitbucket.org/shizuka "deprecated")
 - youtube: [KamiShizuka](https://www.youtube.com/user/KamiShizuka)
 - steam: [KamiShizuka](http://steamcommunity.com/id/kamishizuka)
+- keybase: [kamishizuka](https://keybase.io/kamishizuka)
 
 [brst]: http://www.bronystate.net
 [tom2012]: https://www.youtube.com/watch?v=4jNBQ-_4zlo
@@ -21,17 +22,18 @@ permalink: /resume/
 [brstint]: https://www.youtube.com/watch?v=zmBlxzbLj5s
 [brstemb]: https://bitbucket.org/shizuka/sk-bs-theater/
 [brstbak]: http://bit.ly/bronystatebacklog
+[brstv3]:  https://github.com/Bronystate/brstv3
 [wom]: http://www.worldofminecraft.com/
 [gh]: http://gamer.haus/
 [tn]: http://www.tribesnext.com/
 
-[imgbrst]: brst-spike-theater.png
+[imgbrst]: brstv3.png
 [imgwom]: wom-frontpage.png
 [imggh]: gh-forums.png
 
 -----
 
-## [Bronystate][brst] / Technical Supervisor / 2011-present {#brst}
+## [Bronystate][brst] / Community Manager / 2011-present {#brst}
 
 [![Bronystate Spike theater][imgbrst]][brst]{: .noext}
 {: .h2float .floatright}
@@ -60,6 +62,8 @@ thousands of users.
 - Routinely host game servers for community game nights
 - Frequently stream content at all hours to a wide audience
 - Constantly interact with diverse community over IRC
+- Designed, built, and deployed [new Jekyll-based site][brstv3] in two
+  weeks
 
 -----
 

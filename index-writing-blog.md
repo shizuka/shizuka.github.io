@@ -1,6 +1,6 @@
 ---
 title: Shizuka Hokura
-layout: index
+layout: blogindex
 yahLit: true
 css:
 - /assets/lit/blog.css

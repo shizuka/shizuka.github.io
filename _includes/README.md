@@ -1,0 +1,19 @@
+# Liquid Includes
+
+Master Partials - present on all pages
+ - **mstr_prefix** - opening `html` through `div#wrapper`, appends **meta_header**
+ - **mstr_postfix** - appends **meta_footer**, closes `div#wrapper`, delayed JS load, closes `html`
+ 
+Zone Partials - blocks of stuff on page
+ - `div#contentwrapper` must be explicitly opened and closed (for alternate main content formats)
+ - **zone_banner** - `div.box` with banner and metadata for page (page layout specific)
+ - **zone_content** - `.md` contents, broken into `section`s by `hr`
+ - **zone_sidebar** - `aside#sidebar` with blurb, contact links, other stuff
+
+Meta Partials - included by other partials
+ - **meta_header** - logo and navigation, included by **mstr_prefix**
+ - **meta_footer** - end of page, included by **mstr_postfix**
+ - **meta_backtotop** - top link, included by **zone_content** in each `section`
+
+Snippet Partials - blocks of reusable code
+ - **snip_**

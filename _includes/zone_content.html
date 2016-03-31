@@ -1,0 +1,6 @@
+{% assign sections = content | split:"<hr />" %}{% for sectioncontent in sections %}
+<section>
+{{ sectioncontent }}
+{% include meta_backtotop.html %}
+</section>
+{% endfor %}

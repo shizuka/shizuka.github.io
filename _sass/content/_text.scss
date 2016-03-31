@@ -21,7 +21,7 @@ ul,ol {
 
 %hx {
   line-height: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   margin-left: -0.25em;
   color: $c-headers;
   font-family: $f-headers;
@@ -50,6 +50,7 @@ h3 {
 }
 
 a {
+  @include transition(all .2s cubic-bezier(.25,.46,.45,.94));
   display: inline-block;
   color: $c-link;
   text-decoration: none;
@@ -57,7 +58,7 @@ a {
     color: $c-link;
   }
   &:hover, &:active {
-    text-decoration: underline;
+    color: $c-link-hover;
   }
   
   //external links

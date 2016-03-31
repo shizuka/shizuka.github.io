@@ -8,7 +8,10 @@ header {
     float: left;
     a {
       color: $c-logo;
+      text-decoration: none;
+      @include transition(all .2s cubic-bezier(.25,.46,.45,.94));
       &:hover {
+        text-decoration: none;
         color: $c-logo-hover;
       }
     }
@@ -50,6 +53,7 @@ header {
       list-style-position: outside;
       float: left;
       &:after {
+        color: $c-link-nav-sep;
         content: " / ";
       }
       &:last-child:after {
@@ -58,16 +62,25 @@ header {
       
       a {
         color: $c-link-nav;
+        &:visited {
+          color: $c-link-nav;
+        }
+        &:hover {
+          color: $c-link-nav-hover;
+        }
         &.youarehere {
+          color: $c-link-yah;
           &:before {
+            color: $c-link-nav;
             content: "[";
           }
           &:after {
+            color: $c-link-nav;
             content: "]";
           }
-        }
-        &:visited {
-          color: $c-link-nav;
+          &:hover {
+            color: $c-link-nav-hover;
+          }
         }
       }
     }

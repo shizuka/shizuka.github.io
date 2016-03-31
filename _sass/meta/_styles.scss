@@ -13,15 +13,19 @@ $c-text-light: lighten($c-text, 20%);
 
 // Links
 $c-link: #a32500;
+$c-link-hover: saturate(lighten($c-link, 20%), 20%);
 $c-link-nav: lighten(#efe4bd, 20%);
+$c-link-nav-hover: darken(#a39770, 25%);
+$c-link-nav-sep: #a39770;
+$c-link-yah: darken(#a39770, 10%);
 
 // Elements
 $c-border: #a39770;
 $border: 2px solid $c-border;
 $border-footer: 2px solid rgba($c-border, 0.5);
 $c-headers: $c-text-light;
-$c-logo: $c-headers;
-$c-logo-hover: $c-link-nav;
+$c-logo: $c-text-light;
+$c-logo-hover: $c-text;
 $c-name: $c-text;
 $c-tagline: $c-text-light;
 
@@ -79,5 +83,4 @@ $s-h3: 18px;
 
 
 //// INCLUDE FONTS /////
-@import 'lib/web-fonts';
 @include web-fonts(map-values($fonts));

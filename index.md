@@ -77,6 +77,9 @@ This is some *italic* and some **bold** text.
 
 Here is `some code` in the text.
 
+Longer block of text containing an [external link](http://www.google.com) and
+an [internal link](/).
+
 ![image](http://placehold.it/100x100){: .noborder} image with .noborder class
 
 {% highlight java %}

@@ -20,7 +20,7 @@ suscipit leo id rutrum tincidunt. Quisque suscipit velit ipsum,
 non placerat tortor tristique eget. Sed id enim vitae eros
 elementum ornare.
 
-![box](http://[placehold.it/100)
+![box](http://placehold.it/100)
 {: .floatright}
 
 Cras sed euismod turpis, eu interdum orci. Praesent vulputate,

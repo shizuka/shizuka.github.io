@@ -34,12 +34,41 @@ $fonts: ();
 
 $f-default: 'Verdana', sans-serif;
 
+$f-text: font('Noto Sans'), sans-serif;
 $f-logo: font('Iceland'), sans-serif;
 $f-nav: 'Verdana', sans-serif;
 $f-headers: font('Economica'), sans-serif;
 $f-name: font('Economica'), sans-serif;
 $f-tagline: 'Verdana', sans-serif;
 $f-code: font('Source Code Pro'), monospace;
+$f-footer: $f-default;
+
+//// SIZES ////
+$s-text: 13px;
+$s-blockquote: 0.85em;
+
+$s-logo: 28px;
+$s-logo-mt: 24px;
+
+$s-nav: 14px;
+$s-nav-mt: 28px;
+
+$s-name: 17px;
+$s-tagline: 0.85em;
+$s-sidebar-h4: 14px;
+
+$s-top: 11px;
+$s-top-mt: 0.5em;
+$s-top-foot-mt: $s-top-mt - 2em;
+$s-top-mr: -1em;
+
+$s-footer: 0.85em;
+$s-footer-pad: 0.25em;
+
+$s-h1: 2em;
+$s-h2: 1.5em;
+$s-h3: 1.25em;
+
 
 //// INCLUDE FONTS /////
 @import 'lib/web-fonts';

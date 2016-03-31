@@ -33,17 +33,17 @@ ul,ol {
 
 h1 {
   @extend %hx;
-  font-size: 2em;
+  font-size: $s-h1;
 }
 
 h2 {
   @extend %hx;
-  font-size: 1.5em;
+  font-size: $s-h2;
 }
 
 h3 {
   @extend %hx;
-  font-size: 1.25em;
+  font-size: $s-h3;
 }
 
 a {
@@ -95,7 +95,7 @@ blockquote {
   padding: 1em;
   margin-bottom: 1em;
   font-style: italic;
-  font-size: 0.85em;
+  font-size: $s-blockquote;
   overflow-x: hidden;
   
   &.noitalic {

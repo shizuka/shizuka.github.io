@@ -14,12 +14,12 @@
 
 .backtotop {
   float: right;
-  margin-right: -1em;
-  margin-top: 0.5em;
-  font-size: 11px;
+  margin-right: $s-top-mr;
+  margin-top: $s-top-mt;
+  font-size: $s-top;
   
   &.footer {
-    margin-top: -1.5em;
+    margin-top: $s-top-foot-mt;
     margin-right: 0;
   }
   

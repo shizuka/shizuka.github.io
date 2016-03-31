@@ -28,31 +28,6 @@ defaults:
       path: ""
     values:
       layout: "page"
-      author: "Shizuka Kamishima"
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      yahLit: true
-      layoutcss:
-        - /assets/lit/blog.css
-  -
-    scope:
-      path: ""
-      type: writing
-    values:
-      layout: libpage
-      library: 'misc'
-      yahLit: true
-      layoutcss:
-        - /assets/lit/library.css
-  - 
-    scope:
-      path: "about"
-    values:
-      yahAbt: true
   -
     scope:
       path: "projects"
@@ -65,11 +40,18 @@ defaults:
       yahRes: true
   -
     scope:
-      path: "writing"
+      path: ""
+      type: posts
     values:
-      yahLit: true
-      layoutcss:
-        - /assets/lit/library.css
+      layout: post
+      yahWrt: true
+  -
+    scope:
+      path: ""
+      type: writing
+    values:
+      library: "misc"
+      yahWrt: true
   -
     scope:
       path: "assets"

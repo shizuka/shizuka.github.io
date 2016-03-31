@@ -1,6 +1,7 @@
 ---
 # Home
 layout: index
+yahHome: true
 ---
 
 # Foo Bar Baz

@@ -11,7 +11,7 @@
       text-align: center;
       font-family: $f-name;
       font-size: $s-name;
-      color: $c-text;
+      color: $c-name;
     }
     blockquote { //tagline
       margin: 0;
@@ -21,21 +21,22 @@
       line-height: 1.5em;
       font-family: $f-tagline;
       font-size: $s-tagline;
-      font-style: oblique;
-      color: $c-text-light;
+      font-style: italic;
+      color: $c-tagline;
     }
     
     h4 { //headings
+      font-family: $f-sidebar-h4;
       font-size: $s-sidebar-h4;
       margin-top: -5px;
       margin-bottom: 5px;
       color: $c-headers;
     }
     
-    ul.sidenav {
+    ul.sidenav { //contact links
       @extend ul.nobullet;
       margin-top: -10px;
-      padding-left: 1em;
+      padding-left: 0.5em;
     }
     
     .footer {

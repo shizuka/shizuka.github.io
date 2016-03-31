@@ -1,5 +1,6 @@
 p {
   line-height: 1.75em;
+  margin-left: 0.25em;
   padding-bottom: 1rem;
   
   &:last-child {
@@ -10,7 +11,7 @@ p {
 ul,ol {
   line-height: 1.75em;
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
   
   &.nobullet {
     list-style-type: none;
@@ -39,11 +40,13 @@ h1 {
 h2 {
   @extend %hx;
   font-size: $s-h2;
+  font-weight: normal;
 }
 
 h3 {
   @extend %hx;
   font-size: $s-h3;
+  font-weight: normal;
 }
 
 a {

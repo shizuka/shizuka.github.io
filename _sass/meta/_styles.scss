@@ -22,6 +22,8 @@ $border-footer: 2px solid rgba($c-border, 0.5);
 $c-headers: $c-text-light;
 $c-logo: $c-headers;
 $c-logo-hover: $c-link-nav;
+$c-name: $c-text;
+$c-tagline: $c-text-light;
 
 //// FONTS ////
 $fonts: ();
@@ -34,28 +36,34 @@ $fonts: ();
 
 $f-default: 'Verdana', sans-serif;
 
-$f-text: font('Noto Sans'), sans-serif;
-$f-logo: font('Iceland'), sans-serif;
-$f-nav: 'Verdana', sans-serif;
-$f-headers: font('Economica'), sans-serif;
-$f-name: font('Economica'), sans-serif;
-$f-tagline: 'Verdana', sans-serif;
+$f-text: font('Fira Sans'), $f-default;
+$f-logo: font('Iceland'), $f-default;
+$f-nav: font('Source Code Pro'), $f-default;
+$f-headers: $f-logo;
+
+$f-name: font('Architects Daughter'), $f-default;
+$f-tagline: $f-text;
+
 $f-code: font('Source Code Pro'), monospace;
-$f-footer: $f-default;
+
+$f-top: $f-text;
+$f-sidebar-h4: $f-headers;
+$f-footer: $f-text;
 
 //// SIZES ////
 $s-text: 13px;
 $s-blockquote: 0.85em;
 
-$s-logo: 28px;
-$s-logo-mt: 24px;
+$s-logo: 40px;
+$s-logo-mt: 16px;
+$s-logo-pl: 10px;
 
 $s-nav: 14px;
-$s-nav-mt: 28px;
+$s-nav-mt: 21px;
 
-$s-name: 17px;
-$s-tagline: 0.85em;
-$s-sidebar-h4: 14px;
+$s-name: 20px;
+$s-tagline: 11px;
+$s-sidebar-h4: 18px;
 
 $s-top: 11px;
 $s-top-mt: 0.5em;
@@ -65,9 +73,9 @@ $s-top-mr: -1em;
 $s-footer: 0.85em;
 $s-footer-pad: 0.25em;
 
-$s-h1: 2em;
-$s-h2: 1.5em;
-$s-h3: 1.25em;
+$s-h1: 30px;
+$s-h2: 20px;
+$s-h3: 18px;
 
 
 //// INCLUDE FONTS /////

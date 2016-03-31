@@ -25,8 +25,9 @@ header {
       padding: 0;
       font-family: $f-logo;
       font-size: $s-logo;
+      font-weight: normal;
       margin-top: $s-logo-mt;
-      padding-left: 5px;
+      padding-left: $s-logo-pl;
       float: right;
       color: currentColor;
     }
@@ -39,12 +40,12 @@ header {
     font-family: $f-nav;
     font-weight: bold;
     ul {
-      padding-bottom: 0;
+      padding: 0;
       display: inline;
     }
     li {
       margin: 0;
-      padding: 0 0.25em 0.25em 0;
+      padding: 0.25em;
       list-style-type: none;
       list-style-position: outside;
       float: left;

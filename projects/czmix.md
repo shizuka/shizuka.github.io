@@ -69,6 +69,6 @@ Runtime: 00:33:50 - In progress since 2011!
 
 </div>
 
-[cz1-download]: https://dl.dropboxusercontent.com/u/1208236/czmix/cathedral_mix_i.mp3
-[cz2-download]: https://dl.dropboxusercontent.com/u/1208236/czmix/cathedral_mix_ii.mp3
-[cz3-download]: https://dl.dropboxusercontent.com/u/1208236/czmix/czm3_preview2.mp3
+[cz1-download]: https://drive.google.com/open?id=0B2UkrR9vDjRUeWtobTU1a1hWQTg
+[cz2-download]: https://drive.google.com/open?id=0B2UkrR9vDjRUbjJDdjZrY1BhX3M
+[cz3-download]: https://drive.google.com/open?id=0B2UkrR9vDjRUZ1d6aGNoRXd3QVU

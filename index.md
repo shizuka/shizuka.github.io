@@ -1,4 +1,4 @@
 ---
 # Home
-layout: home
+layout: nuhome
 ---

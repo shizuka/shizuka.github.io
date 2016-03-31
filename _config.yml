@@ -1,10 +1,10 @@
 #This Vortal Cord v5
-#Shizuka Kamishima - 2015-05-09
+#Shizuka Kamishima
 title: this vortal cord
 url: "http://www.vortalcord.net"
 baseurl: ""
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 timezone: America/Chicago
 
 # blog posts

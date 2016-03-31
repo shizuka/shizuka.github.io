@@ -1,0 +1,118 @@
+p {
+  line-height: 1.75em;
+  padding-bottom: 1rem;
+  
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+ul,ol {
+  line-height: 1.75em;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  
+  &.nobullet {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+%hx {
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  margin-left: -0.25em;
+  color: $c-headers;
+  font-family: $f-headers;
+  
+  margin-top: 0.25em;
+  &:first-child {
+    margin-top: -0.25em;
+  }
+}
+
+h1 {
+  @extend %hx;
+  font-size: 2em;
+}
+
+h2 {
+  @extend %hx;
+  font-size: 1.5em;
+}
+
+h3 {
+  @extend %hx;
+  font-size: 1.25em;
+}
+
+a {
+  display: inline-block;
+  color: $c-link;
+  text-decoration: none;
+  &:visited {
+    color: $c-link;
+  }
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+  
+  //external links
+  &[href^="http://"], &[href^="https://"] {
+    &:after {
+      content: url('/assets/img/extlink.png');
+      margin: 0 0 0 3px;
+    }
+  }
+  //exempt our domain, or specifically marked links
+  &[href*="//www.vortalcord.net/"], &.noext {
+    &:after {
+      content: '';
+      margin: 0;
+    }
+  }
+}
+
+strong {
+  font-weight: bold;
+  color: $c-text-light;
+}
+
+img {
+  padding: 2px;
+  background-color: $c-bg-content;
+  border: 2px solid #a39770;
+  
+  &.noborder {
+    padding: 4px; //to keep spacing with bordered ones
+    background: none;
+    border: none;
+  }
+}
+
+blockquote {
+  background-color: $c-bg-content;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-size: 0.85em;
+  overflow-x: hidden;
+  
+  &.noitalic {
+    font-style: normal;
+  }
+}
+
+code {
+  background-color: $c-bg-content;
+  padding: 0 0.25em;
+  font-family: $f-code;
+}
+
+pre {
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background-color: $c-bg-content;
+  overflow-x: auto;
+  font-size: smaller;
+}

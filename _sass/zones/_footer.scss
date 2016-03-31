@@ -1,0 +1,13 @@
+footer {
+  clear: both;
+  margin-bottom: 1rem;
+  border-top: $border-footer;
+  border-bottom: $border-footer;
+  
+  font-size: 0.85em;
+  text-align: center;
+  padding: 0.25em;
+  p {
+    padding-bottom: 0;
+  }
+}

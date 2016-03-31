@@ -1,0 +1,46 @@
+//This Vortal Cord - Text Styles
+//Shizuka Kamishima
+
+//// COLORS ////
+// Backgrounds
+$c-bg: #eac99a;
+$c-bg-top: #bab293; //top fades into $c-bg
+$c-bg-content: #efe4bd;
+
+// Text
+$c-text: #2b2922;
+$c-text-light: lighten($c-text, 20%);
+
+// Links
+$c-link: #a32500;
+$c-link-nav: lighten(#efe4bd, 20%);
+
+// Elements
+$c-border: #a39770;
+$border: 2px solid $c-border;
+$border-footer: 2px solid rgba($c-border, 0.5);
+$c-headers: $c-text-light;
+$c-logo: $c-headers;
+$c-logo-hover: $c-link-nav;
+
+//// FONTS ////
+$fonts: ();
+@function font($key) {
+  @if map-has-key($fonts, key) == false {
+    $fonts: map-merge($fonts, ($key: ($key))) !global;
+  }
+  @return $key;
+}
+
+$f-default: 'Verdana', sans-serif;
+
+$f-logo: font('Iceland'), sans-serif;
+$f-nav: 'Verdana', sans-serif;
+$f-headers: font('Economica'), sans-serif;
+$f-name: font('Economica'), sans-serif;
+$f-tagline: 'Verdana', sans-serif;
+$f-code: font('Source Code Pro'), monospace;
+
+//// INCLUDE FONTS /////
+@import 'lib/web-fonts';
+@include web-fonts(map-values($fonts));

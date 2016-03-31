@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/assets/img/100-75-5-monochrome.png"), linear-gradient(rgba($c-bg-top, 1) 0, rgba($c-bg-top, 0) 100px) no-repeat, $c-bg;
+  
+  font-family: Verdana;
+  font-size: 13px;
+  color: $c-text;
+}

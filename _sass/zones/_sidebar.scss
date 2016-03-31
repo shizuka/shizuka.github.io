@@ -1,0 +1,41 @@
+#sidebar {
+  float: left;
+  width: 230px;
+  
+  .box {
+    padding: 15px 15px 15px 15px;
+    
+    h3 { //name
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: $f-name;
+      font-size: 17px;
+      color: $c-text;
+    }
+    blockquote { //tagline
+      margin: 0;
+      padding: 0;
+      padding-top: 0.5em;
+      text-align: center;
+      line-height: 1.5em;
+      font-family: $f-tagline;
+      font-size: 0.85em;
+      font-style: oblique;
+      color: $c-text-light;
+    }
+    
+    h4 { //headings
+      font-size: 14px;
+      margin-top: -5px;
+      margin-bottom: 5px;
+      color: $c-headers;
+    }
+    
+    ul.sidenav {
+      @extend ul.nobullet;
+      margin-top: -10px;
+      padding-left: 1em;
+    }
+  }
+}

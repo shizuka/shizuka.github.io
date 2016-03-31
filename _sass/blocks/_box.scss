@@ -1,0 +1,32 @@
+.box {
+  border: $border;
+  padding: 1em;
+  background-color: $c-bg-content;
+  
+  img {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: auto;
+  }
+  
+  blockquote {
+    font-size: 0.85em;
+  }
+  
+  section {
+    padding: 1rem 0 0.5rem 0;
+    margin: 0;
+    box-shadow: none;
+    &:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    & *:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

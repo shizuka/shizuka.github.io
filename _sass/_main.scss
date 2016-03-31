@@ -5,9 +5,9 @@
 @import 'meta/styles';
 
 /***** CONTENT *****/
-@import 'page';
-@import 'text';
-@import 'modifiers';
+@import 'content/page';
+@import 'content/text';
+@import 'content/modifiers';
 
 /***** ZONES *****/
 @import 'zones/header';

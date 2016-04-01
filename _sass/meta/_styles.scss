@@ -15,10 +15,10 @@ $c-text-lighter: lighten($c-text-light, 20%);
 // Links
 $c-link: #a32500;
 $c-link-hover: saturate(lighten($c-link, 20%), 20%);
-$c-link-nav: lighten(#efe4bd, 20%);
-$c-link-nav-hover: darken(#a39770, 25%);
+$c-link-nav: darken(#a39770, 15%);
+$c-link-nav-hover: darken(#a39770, 30%);
 $c-link-nav-sep: #a39770;
-$c-link-yah: darken(#a39770, 10%);
+$c-link-yah: lighten(#efe4bd, 20%);
 
 // Elements
 $c-border: #a39770;

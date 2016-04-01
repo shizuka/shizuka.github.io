@@ -10,6 +10,7 @@ $c-bg-content: #efe4bd;
 // Text
 $c-text: #2b2922;
 $c-text-light: lighten($c-text, 20%);
+$c-text-lighter: lighten($c-text-light, 20%);
 
 // Links
 $c-link: #a32500;

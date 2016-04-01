@@ -13,6 +13,7 @@
       font-size: $s-name;
       color: $c-name;
     }
+    
     blockquote { //tagline
       margin: 0;
       padding: 0;
@@ -28,16 +29,30 @@
     h4 { //headings
       font-family: $f-sidebar-h4;
       font-size: $s-sidebar-h4;
-      margin-top: -5px;
       margin-bottom: 5px;
       color: $c-headers;
     }
     
     ul.sidenav { //contact links
       @extend ul.nobullet;
-      margin-top: -10px;
       padding-left: 0.5em;
-    }
+      
+      a {
+        display: inline;
+        position: relative;
+        
+        &:hover:after {
+          content: attr(tooltip);
+          color: $c-text-lighter;
+          font-size: $s-footer;
+          padding: 1px 5px;
+          position: absolute;
+          z-index: 98;
+          left: 100px;
+          bottom: -0.5em;
+        }
+      }
+    } // ul.sidenav
     
     .footer {
       font-size: $s-footer;

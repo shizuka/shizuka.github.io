@@ -57,7 +57,9 @@ $f-footer: $f-text;
 
 //// SIZES ////
 $s-text: 13px;
-$s-blockquote: 0.85em;
+$s-text-small: 11px;
+
+$s-blockquote: $s-text-small;
 
 $s-logo: 40px;
 $s-logo-mt: 16px;

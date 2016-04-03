@@ -1,12 +1,28 @@
 .box {
   border: $border;
-  padding: 1em;
+  padding: 13px;
   background-color: $c-bg-content;
+  
+  & * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+  }
   
   img {
     display: block;
     border: none;
     padding: 0;
     margin: auto;
+  }
+  
+  ul {
+    padding-left: 1em;
   }
 }

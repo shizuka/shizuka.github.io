@@ -49,9 +49,12 @@
       color: $c-headers;
     }
     
-    ul.sidenav { //contact links
-      @extend ul.nobullet;
-      padding-left: 0.5em;
+    ul {
+      padding-left: 1em;
+      
+      &.contacts {
+        padding-left: 0.5em;
+      }
       
       a {
         display: inline;
@@ -68,7 +71,7 @@
           bottom: -0.5em;
         }
       }
-    } // ul.sidenav
+    } // ul
     
     .footer {
       font-size: $s-footer;

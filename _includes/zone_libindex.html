@@ -1,0 +1,31 @@
+<!-- zone - library index -->
+{% capture codeBlock %}
+  {% assign lib = page.library %}
+  {% assign libmeta = site.data.libraries[lib] %}
+  {% if include.sortasc %}
+    {% assign libpages = site.writing | where: "library",page.library | sort: "date" %}
+  {% else %}
+    {% assign libpages = site.writing | where: "library",page.library | sort: "date" | reverse %}
+  {% endif %}
+{% endcapture %}{% assign codeBlock = nil %}
+<div id="libindex">
+  <h1>{{ libmeta.name }}</h1>
+  {% if libmeta.desc %}<h2>{{ libmeta.desc }}</h2>{% endif %}
+  <hr nobreak>
+  <ul class="postlist">
+    {% for page in libpages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a>
+        <span class="postinfo">
+        // <span class="date">{{page.date | date: "%F"}}</span>
+        {% if page.tags != empty %}
+        <ul class="tags">
+          {% for tag in page.tags | sort %}
+          <li><a href="/writing/{{ lib }}/tags.html#{{ tag }}">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div> <!-- #libindex -->

@@ -3,7 +3,7 @@ p {
   margin-left: 0.25em;
   padding-bottom: 1rem;
   
-  &:last-child {
+  &:last-of-type {
     padding-bottom: 0;
   }
 }
@@ -119,4 +119,10 @@ pre {
   background-color: $c-bg-content;
   overflow-x: auto;
   font-size: smaller;
+}
+
+hr {
+  border: 0;
+  border-bottom: $border;
+  margin-bottom: 1em;
 }

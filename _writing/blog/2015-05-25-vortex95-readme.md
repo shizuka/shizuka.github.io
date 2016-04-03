@@ -1,11 +1,7 @@
 ---
 title: Vortex95 Mechanics
-date: 2015-05-25
-parents:
-  - title: blog
-    url: /writing/blog/
-  - title: vortex95
-    url: /writing/blog/2015-05-25-vortex95.html
+date: 2015-05-25 00:01
+library: blog
 ---
 
 # VoRTeX Mechanics

@@ -41,22 +41,8 @@ defaults:
         url: /projects
       splash: "/assets/img/splash_470x80_code.png"
       
-  #== /writing/* ==#
   -
     scope:
-      path: ""
-      type: posts # from src/_posts/*
-    values:
-      yahWrt: true
-      layout: pg_subpost
-      root:
-        name: writing
-        url: /writing
-      library: blog
-      splash: "/assets/img/splash_470x80_journal.png"
-  -
-    scope:
-      path: ""
       type: writing # from src/_writing/*, collected
     values:
       yahWrt: true

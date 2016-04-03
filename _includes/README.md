@@ -11,6 +11,7 @@ Zone Partials - blocks of stuff on page
  - **zone_banner-postinfo** - **zone_banner-path** with post info line (date, tags/collection)
  - **zone_content** - `.md` contents, broken into `section`s by `hr`
  - **zone_sidebar** - `aside#sidebar` with blurb, contact links, other stuff
+ - **zone_libindex** - index for `page.library`, default sort date descending, add `sortasc=true`
 
 Meta Partials - included by other partials
  - **meta_header** - logo and navigation, included by **mstr_prefix**

@@ -1,6 +1,7 @@
 ---
 title: Book Review - 'My Little Brony'
 date: 2015-05-20
+library: blog
 tags: [bronystate]
 ---
 

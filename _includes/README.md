@@ -6,7 +6,9 @@ Master Partials - present on all pages
  
 Zone Partials - blocks of stuff on page
  - `div#contentwrapper` must be explicitly opened and closed (for alternate main content formats)
- - **zone_banner** - `div.box` with banner and metadata for page (page layout specific)
+ - **zone_banner** - `div.box` with splash banner
+ - **zone_banner-path** - **zone_banner** with breadcrumbs to category index
+ - **zone_banner-postinfo** - **zone_banner-path** with post info line (date, tags/collection)
  - **zone_content** - `.md` contents, broken into `section`s by `hr`
  - **zone_sidebar** - `aside#sidebar` with blurb, contact links, other stuff
 

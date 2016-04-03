@@ -1,11 +1,11 @@
 ---
 title: Tags Index
 permalink: /writing/blog/tags.html
-parents:
-- url: /writing/blog/
-  title: blog
-css:
-- /assets/lit/blog.css
+layout: pg_subpage
+root:
+  name: writing
+  url: /writing
+library: blog
 ---
 
 # posts by tag

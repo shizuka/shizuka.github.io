@@ -49,6 +49,8 @@ $f-headers: $f-logo;
 $f-name: font('Architects Daughter'), $f-default;
 $f-tagline: $f-text;
 
+$f-breadcrumbs: $f-nav;
+
 $f-code: font('Source Code Pro'), monospace;
 
 $f-top: $f-text;
@@ -71,6 +73,9 @@ $s-nav-mt: 21px;
 $s-name: 20px;
 $s-tagline: 11px;
 $s-sidebar-h4: 18px;
+
+$s-breadcrumbs: 11px;
+$s-postinfo: 11px;
 
 $s-top: 11px;
 $s-top-mt: 0.5em;

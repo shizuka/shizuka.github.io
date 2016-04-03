@@ -29,9 +29,10 @@
 # if the page needs a book, it should be in a library
 #
 
-misc:
-  name: Miscellaneous
-  desc: For pages not in their own category, page links may change any time
+blog:
+  name: Shizuka Hokura
+  desc: General blogging
 gamelit:
   name: Game Literature
   desc: Bits of particularly outstanding writing from my gaming library
+  

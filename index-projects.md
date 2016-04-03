@@ -1,11 +1,9 @@
 ---
 title: projects
+permalink: /projects/
 layout: index
 yahPrj: true
 splash: /assets/img/splash_470x80_code.png
-css:
-- /assets/css/sectionbox.css
-permalink: /projects/
 ---
 
 # projects

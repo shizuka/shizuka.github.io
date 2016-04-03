@@ -22,7 +22,37 @@
     margin: auto;
   }
   
-  ul {
-    padding-left: 1em;
+  ol.breadcrumbs {
+    font-size: $s-breadcrumbs;
+    font-family: $f-breadcrumbs;
+    font-weight: bold;
+    padding-left: 13px;
+    &:before {
+      content: "//";
+    }
+    
+    li {
+      list-style-type: none;
+      display: inline;
+      margin-left: -0.25em;
+      
+      &:after {
+        padding-left: 0.5em;
+        content: "/";
+      }
+      
+      &:last-child:after {
+        content: "";
+      }
+      
+    }
   }
+  
+  .postinfo {
+    font-family: $f-breadcrumbs;
+    font-weight: bold;
+    padding-left: 13px;
+    margin: 0;
+  }
+  
 }

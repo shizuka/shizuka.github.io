@@ -27,7 +27,7 @@ defaults:
     scope:
       path: "" # master defaults
     values:
-      layout: "page"
+      layout: "pg_subpage"
       splash: "/assets/img/splash_470x80_blueforest.png"
       
   -
@@ -35,6 +35,10 @@ defaults:
       path: "projects"
     values:
       yahPrj: true
+      layout: "pg_subpage"
+      root:
+        name: projects
+        url: /projects
       splash: "/assets/img/splash_470x80_code.png"
       
   #== /writing/* ==#
@@ -43,22 +47,33 @@ defaults:
       path: ""
       type: posts # from src/_posts/*
     values:
-      layout: post
       yahWrt: true
+      layout: pg_subpost
+      root:
+        name: writing
+        url: /writing
+      library: blog
       splash: "/assets/img/splash_470x80_journal.png"
   -
     scope:
       path: ""
       type: writing # from src/_writing/*, collected
     values:
-      library: "misc"
       yahWrt: true
+      layout: pg_subpost
+      root:
+        name: writing
+        url: /writing
       splash: "/assets/img/splash_470x80_journal.png"
   -
     scope:
       path: "writing" # from src/writing/*, non collected
     values:
       yahWrt: true
+      layout: pg_subpost
+      root:
+        name: writing
+        url: /writing
       splash: "/assets/img/splash_470x80_journal.png"
       
   -

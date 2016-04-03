@@ -18,7 +18,7 @@ sass:
     sass_dir: _sass
     
 collections:
-  library:
+  libraries:
     output: true
     permalink: /writing/:path/
   writing:
@@ -70,7 +70,7 @@ defaults:
   -
     scope:
       path: ""
-      type: library
+      type: libraries
     values:
       layout: pg_libindex
       yahWrt: true

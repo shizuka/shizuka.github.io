@@ -1,7 +1,7 @@
 # Liquid Layout Templates
 
  - **pg_home.html** - Home page, w/ summary of projects and recent n posts/pages
- - **pg_resume.html** - resume page, banner includes multiple text
+ - **pg_resume.html** - resume page, banner uses special text
  - **pg_root.html** - Root level pages - indexes, banner is just image
  - **pg_subpage.html** - Sublevel pages - banner includes breadcrumbs to index
  - **pg_subpost.html** - Sublevel posts - banner w/ breadcrumbs + postinfo block
@@ -12,7 +12,7 @@
 
  - `/`
    - **pg_home**
-   - splash: minnehaha? (470x160)
+   - splash: minnehaha falls
    - content:
      - blogroll, reverse chrono list of most recent 3? posts/pages excerpts
      - figure out combining collection pages w/ blog posts
@@ -25,7 +25,7 @@
      - positions
  - `/projects`
    - **pg_root**
-   - splash: minecraft - angel sprite over hills (470x80)
+   - splash: code stock photo
  - `/projects/*`
    - **pg_subpage**
    - splash: project-specified
@@ -34,19 +34,19 @@
      - project page contents
  - `/writing`
    - **pg_root**
-   - splash: gehn's desk
+   - splash: library shelves
    - content:
      - list of categories - blog, tag index, major libraries
      - list of 10 most recent posts/pages by title
- - `/writing/blog/*` (_posts)
-   - **pg_subpost**
-   - splash: gehn's desk (optional per-post override)
-   - box text: breadcrumbs to writing index + postinfo block (date, cat/lib, tags)
-   - content:
-     - post content
- - `/writing/*` (_writing)
+ - `/writing/*/` (_libraries)
    - **pg_subpage**
    - splash: gehn's desk (optional per-post / per-library override)
    - box text: breadcrumbs to writing index
    - content:
      - page content
+ - `/writing/*/*` (_writing)
+   - **pg_subpost**
+   - splash: gehn's desk (per-library/post override)
+   - box text: breadcrumbs + post info
+   - content:
+     - post content

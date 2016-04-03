@@ -4,9 +4,16 @@
   Shizuka Kamishima
   Generated {{ 'now' | date: '%F' }} by Jekyll
 -->
+{%capture cb%}
+  {% if page.library %}
+    {% assign lib = site.libraries | where: "library",page.library | first %}
+    {% assign libpages = site.writing | where: "library",page.library | sort: "date" %}
+    {% if lib.sortdesc %}{% assign libpages = site.writing | where: "library",page.library | sort: "date" | reverse %} {% endif %}
+  {% endif %}
+{%endcapture%}{%assign cb=nil%}
 <html>
 <head>
-  <title>{% if page.title %}{{ page.title }} / {% endif %}{% if page.library %}{{ site.data.libraries[page.library].name | downcase }} / {% endif %}{% if page.root %}{{ page.root.name | downcase }} // {% endif %}this vortal cord</title>
+  <title>{% if page.title %}{{ page.title }} / {% endif %}{% if page.library %}{{ lib.name | downcase }} / {% endif %}{% if page.root %}{{ page.root.name | downcase }} // {% endif %}this vortal cord</title>
   <link rel="stylesheet" type='text/css' href="/assets/css/main.css">
   <link rel="stylesheet" type='text/css' href="/assets/css/syntax.css">
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">

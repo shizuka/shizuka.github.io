@@ -2,6 +2,7 @@
 # Home
 layout: index
 yahHome: true
+splash: /assets/img/splash_470x240_minnehaha.png
 ---
 
 # Foo Bar Baz

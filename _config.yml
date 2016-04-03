@@ -25,33 +25,42 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "" # master defaults
     values:
       layout: "page"
+      splash: "/assets/img/splash_470x80_blueforest.png"
+      
   -
     scope:
       path: "projects"
     values:
       yahPrj: true
-  -
-    scope:
-      path: "resume"
-    values:
-      yahRes: true
+      splash: "/assets/img/splash_470x80_code.png"
+      
+  #== /writing/* ==#
   -
     scope:
       path: ""
-      type: posts
+      type: posts # from src/_posts/*
     values:
       layout: post
       yahWrt: true
+      splash: "/assets/img/splash_470x80_journal.png"
   -
     scope:
       path: ""
-      type: writing
+      type: writing # from src/_writing/*, collected
     values:
       library: "misc"
       yahWrt: true
+      splash: "/assets/img/splash_470x80_journal.png"
+  -
+    scope:
+      path: "writing" # from src/writing/*, non collected
+    values:
+      yahWrt: true
+      splash: "/assets/img/splash_470x80_journal.png"
+      
   -
     scope:
       path: "assets"

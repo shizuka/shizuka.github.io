@@ -1,7 +1,8 @@
 ---
 title: writing
 layout: index
-yahLit: true
+yahWrt: true
+splash: /assets/img/splash_470x80_journal.png
 css: 
 - /assets/lit/libindex.css
 permalink: /writing/

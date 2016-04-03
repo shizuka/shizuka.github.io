@@ -18,6 +18,9 @@ sass:
     sass_dir: _sass
     
 collections:
+  library:
+    output: true
+    permalink: /writing/:path/
   writing:
     output: true
     permalink: /writing/:path.html
@@ -43,6 +46,7 @@ defaults:
       
   -
     scope:
+      path: ""
       type: writing # from src/_writing/*, collected
     values:
       yahWrt: true
@@ -54,6 +58,7 @@ defaults:
   -
     scope:
       path: "writing" # from src/writing/*, non collected
+      type: ""
     values:
       yahWrt: true
       layout: pg_subpost
@@ -61,6 +66,17 @@ defaults:
         name: writing
         url: /writing
       splash: "/assets/img/splash_470x80_journal.png"
+      
+  -
+    scope:
+      path: ""
+      type: library
+    values:
+      layout: pg_libindex
+      yahWrt: true
+      root:
+        name: writing
+        url: /writing
       
   -
     scope:

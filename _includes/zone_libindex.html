@@ -2,13 +2,13 @@
 {% capture codeBlock %}
   {% assign lib = page.library %}
   {% assign libmeta = site.data.libraries[lib] %}
-  {% if include.sortasc %}
+  {% if page.sortasc %}
     {% assign libpages = site.writing | where: "library",page.library | sort: "date" %}
   {% else %}
     {% assign libpages = site.writing | where: "library",page.library | sort: "date" | reverse %}
   {% endif %}
 {% endcapture %}{% assign codeBlock = nil %}
-<div id="libindex">
+<section>
   <h1>{{ libmeta.name }}</h1>
   {% if libmeta.desc %}<h2>{{ libmeta.desc }}</h2>{% endif %}
   <hr nobreak>
@@ -28,4 +28,4 @@
     </li>
     {% endfor %}
   </ul>
-</div> <!-- #libindex -->
+</section>

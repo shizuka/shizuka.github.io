@@ -18,5 +18,9 @@ Meta Partials - included by other partials
  - **meta_footer** - end of page, included by **mstr_postfix**
  - **meta_backtotop** - top link, included by **zone_content** in each `section`
 
-Snippet Partials - blocks of reusable code
- - **snip_**
+SVG Partials - `<svg>` images for inline inclusion, *no file extension*
+ - **svg_toran** - Vortal Cord Logo, toran icon
+ - **svg_sakura** - sakura blossom, Shizuka's icon
+ - **svg_book** - open book, from ahyoheek
+ - **svg_pen** - ink pen, from ahyoheek
+ - **svg_ki** - KI device symbol

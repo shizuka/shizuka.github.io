@@ -1,6 +1,7 @@
 .librarybox { // USED BY index-writing.md
   background-color: $c-bg-content;
   margin: 1rem 0;
+  position: relative;
   
   a {
     display: inline-block;
@@ -33,12 +34,18 @@
       font-family: $f-libname;
       font-weight: bold;
       padding-right: 1em;
+      position: absolute;
+      top: 0;
+      left: 56px;
     }
     
     .libdesc {
       font-size: $s-libdesc;
       font-family: $f-libdesc;
       color: $c-text-light;
+      position: absolute;
+      top: 28px;
+      left: 56px;
     }
     
     &:hover {

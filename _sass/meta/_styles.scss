@@ -2,17 +2,14 @@
 //Shizuka Kamishima
 
 //// COLORS ////
-// Backgrounds
 $c-bg: #eac99a;
 $c-bg-top: #bab293; //top fades into $c-bg
 $c-bg-content: #efe4bd;
 
-// Text
 $c-text: #2b2922;
 $c-text-light: lighten($c-text, 20%);
 $c-text-lighter: lighten($c-text-light, 20%);
 
-// Links
 $c-link: #a32500;
 $c-link-hover: saturate(lighten($c-link, 20%), 20%);
 $c-link-nav: darken(#a39770, 15%);
@@ -20,7 +17,6 @@ $c-link-nav-hover: darken(#a39770, 30%);
 $c-link-nav-sep: #a39770;
 $c-link-yah: lighten(#efe4bd, 20%);
 
-// Elements
 $c-border: #a39770;
 $border: 2px solid $c-border;
 $border-footer: 2px solid rgba($c-border, 0.5);

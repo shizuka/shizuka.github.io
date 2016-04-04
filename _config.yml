@@ -78,6 +78,7 @@ defaults:
         name: writing
         url: /writing
       splash: "/assets/img/splash_470x80_books.png"
+      icon: book
       
   -
     scope:

@@ -11,6 +11,19 @@
     
     @extend .clearfix;
     
+    .libicon {
+      display: block;
+      float: left;
+      svg {
+        border: none;
+        background: none;
+        padding: 4px 8px;
+        width: 40px;
+        height: 40px;
+        fill: currentColor;
+      }
+    }
+    
     p {
       padding: 0;
       display: inline;

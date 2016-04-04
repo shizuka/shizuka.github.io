@@ -15,7 +15,9 @@ splash: /assets/img/splash_470x80_books.png
   <a href="/writing/{{ library.library }}/">
   <p class="libname">{{ library.name }}</p>
   {% if library.desc %}<p class="libdesc">{{ library.desc | downcase }}</p>{% endif %}
-  <img class="floatleft" alt="{{ library.library }}" src="http://placehold.it/40">
+  <div class="libicon">
+    {% assign icon = 'svg/' | append: library.icon %}{% include {{ icon }} %}
+  </div>
   </a>
 </div>
 {% endfor %}

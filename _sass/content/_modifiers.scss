@@ -30,6 +30,15 @@
   }
 }
 
+.clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
 /* COLORS */
 .c-link { color: $c-link }
 .c-text-light { color: $c-text-light }

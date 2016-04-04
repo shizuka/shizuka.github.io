@@ -1,0 +1,39 @@
+// USED BY index-writing.md
+.librarybox {
+  background-color: $c-bg-content;
+  margin: 1rem 0;
+  
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    
+    @extend .clearfix;
+    
+    p {
+      padding: 0;
+      display: inline;
+    }
+    
+    .libname {
+      font-size: $s-libname;
+      font-family: $f-libname;
+      font-weight: bold;
+      padding-right: 1em;
+    }
+    
+    .libdesc {
+      font-size: $s-libdesc;
+      font-family: $f-libdesc;
+      color: $c-text-light;
+    }
+    
+    &:hover {
+      .libdesc {
+        color: $c-text-light;
+      }
+    }
+    
+  }
+}

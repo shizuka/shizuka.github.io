@@ -122,6 +122,7 @@ pre {
 }
 
 hr {
+  @extend .clearfix;
   border: 0;
   border-bottom: $border;
   margin-bottom: 1em;

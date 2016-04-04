@@ -1,7 +1,9 @@
 ---
-title: writing
 layout: pg_root
 permalink: /writing/
+root:
+  name: writing
+  url: /writing
 yahWrt: true
 splash: /assets/img/splash_470x80_books.png
 ---
@@ -10,7 +12,11 @@ splash: /assets/img/splash_470x80_books.png
 
 {% for library in site.libraries %}
 <div class="librarybox">
-  <a href="/writing/{{ library.library }}/">{{ library.name }}</a>
+  <a href="/writing/{{ library.library }}/">
+  <p class="libname">{{ library.name }}</p>
+  {% if library.desc %}<p class="libdesc">{{ library.desc | downcase }}</p>{% endif %}
+  <img class="floatleft" alt="{{ library.library }}" src="http://placehold.it/40">
+  </a>
 </div>
 {% endfor %}
 

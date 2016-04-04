@@ -1,7 +1,9 @@
 ---
-title: projects
 permalink: /projects/
-layout: index
+layout: pg_root
+root:
+  name: projects
+  url: /projects
 yahPrj: true
 splash: /assets/img/splash_470x80_code.png
 ---

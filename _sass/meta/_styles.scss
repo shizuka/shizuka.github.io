@@ -50,6 +50,8 @@ $f-name: font('Architects Daughter'), $f-default;
 $f-tagline: $f-text;
 
 $f-breadcrumbs: $f-nav;
+$f-libname: $f-name;
+$f-libdesc: $f-text;
 
 $f-code: font('Source Code Pro'), monospace;
 
@@ -76,6 +78,10 @@ $s-sidebar-h4: 18px;
 
 $s-breadcrumbs: 11px;
 $s-postinfo: 11px;
+
+$s-libname: 20px;
+$s-libdesc: 11px;
+$s-postlist: 14px;
 
 $s-top: 11px;
 $s-top-mt: 0.5em;

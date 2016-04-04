@@ -1,5 +1,4 @@
-// USED BY index-writing.md
-.librarybox {
+.librarybox { // USED BY index-writing.md
   background-color: $c-bg-content;
   margin: 1rem 0;
   
@@ -48,5 +47,33 @@
       }
     }
     
+  }
+}
+
+.libindex { //used by library index pages
+  position: relative;
+  
+  .libinfo {
+    height: 66px;
+    border-bottom: $border;
+    margin-bottom: 1em;
+    
+    h2 {
+      margin-left: 0;
+    }
+  }
+  
+  .libicon {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    svg {
+      border: $border;
+      background: $c-bg-libicon;
+      padding: 4px;
+      width: 64px;
+      height: 64px;
+      fill: $c-libicon;
+    }
   }
 }

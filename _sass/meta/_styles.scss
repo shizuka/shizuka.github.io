@@ -26,6 +26,9 @@ $c-logo-hover: $c-text;
 $c-name: $c-text;
 $c-tagline: $c-text-light;
 
+$c-libicon: darken(saturate($c-border, 25%), 10%);
+$c-bg-libicon: mix($c-bg-content, $c-bg, 45%);
+
 //// FONTS ////
 $fonts: ();
 @function font($key) {

@@ -10,6 +10,7 @@
     {% assign libpages = site.writing | where: "library",page.library | sort: "date" %}
     {% if lib.sortdesc %}{% assign libpages = site.writing | where: "library",page.library | sort: "date" | reverse %} {% endif %}
   {% endif %}
+  {% assign allposts = site.writing | sort: "date" | reverse %}
 {%endcapture%}{%assign cb=nil%}
 <html>
 <head>

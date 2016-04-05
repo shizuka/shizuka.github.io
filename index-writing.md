@@ -31,16 +31,7 @@ splash: /assets/img/splash_470x80_books.png
 <ul class="postlist">
   {% for post in libpages %}
   <li><a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="postinfo">
-      // <span class="date">{{post.date | date: "%F"}}</span>
-      {% if post.tags != empty %}
-      <ul class="tags">
-        {% for tag in post.tags | sort %}
-        <li><a href="/writing/{{ page.library }}/tags.html#{{ tag }}">{{ tag }}</a></li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-      </span>
+      {% include meta_postinfo.html %}
   {% endfor %}
 </ul>
 {% endif %}

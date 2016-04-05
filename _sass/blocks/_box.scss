@@ -22,6 +22,7 @@
     font-family: $f-breadcrumbs;
     font-weight: bold;
     padding-left: 13px;
+    color: $c-postinfo;
     &:before {
       content: "//";
     }

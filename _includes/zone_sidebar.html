@@ -1,3 +1,4 @@
+<!-- zone - sidebar -->
 <aside id="sidebar">
   <div class="box">
     <section>
@@ -7,7 +8,7 @@
       than the risk it takes to blossom</blockquote>
     </section>
     <section>
-      <ul class="sidenav nobullet">
+      <ul class="contacts nobullet">
         <li><i class="c-link fa fa-fw fa-envelope"></i> <span class="c-text-light">shizuka@vortalcord.net</span></li>
         <li><a class="noext" title="shizuka on Github" tooltip="//github" href="https://github.com/shizuka"><i class="fa fa-fw fa-github"></i> shizuka</a></li>
         <li><a class="noext" title="@kamishizuka on Twitter" tooltip="//twitter" href="https://twitter.com/kamishizuka"><i class="fa fa-fw fa-twitter"></i> kamishizuka</a></li>
@@ -17,13 +18,14 @@
       </ul>
     </section>
     <section>
-      <h4>recent updates</h4>
-      <ul>
-        <li>bronystate 3.0 postmortem</li>
-        <li>the talos time capsules</li>
-        <li>being an edge case</li>
-        <li>hikaribot</li>
-        <li>bronystate 3.0</li>
+      <h4>recent writings</h4>
+      <ul class="recentlist">
+        {% for post in allposts limit:5 %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {% include meta_postinfo.html noprefix=true notags=true %}
+        </li>
+        {% endfor %}
       </ul>
     </section>
     <section class="footer">

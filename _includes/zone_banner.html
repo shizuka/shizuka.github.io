@@ -9,16 +9,5 @@
     {% endfor %}<li>{{ page.title | downcase }}</li>
   </ol>
   {% endif %}
-  {% if include.postinfo %}
-  <div class="postinfo">
-    // <span class="date">{{page.date | date: "%F"}}</span>
-    {% if page.tags != empty %}
-    <ul class="tags">
-      {% for tag in page.tags %}
-      <li><a href="/writing/blog/tags.html#{{tag}}">{{ tag }}</a></li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-  </div>
-  {% endif %}
+  {% if include.postinfo %}{% include meta_postinfo.html nolib=true post=page %}{% endif %}
 </div>

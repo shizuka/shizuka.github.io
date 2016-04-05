@@ -1,0 +1,16 @@
+{% if include.post %}{% assign post = include.post %}{% endif %}
+<span class="postinfo">
+{% unless include.noprefix %}//{% endunless %}
+<span class="date">{{post.date | date: "%F"}}</span>
+{% unless include.nolib %}{% if post.library %}
+{% assign postlibmeta = site.libraries | where: "library",post.library | first %}
+<span class="lib"><a href="/writing/{{ post.library }}">{{ postlibmeta.name | downcase }}</a></span>
+{% endif %}{% endunless %}
+{% unless include.notags %}{% if post.tags != empty %}
+<ul class="tags">
+  {% for tag in post.tags | sort %}
+  <li><a href="/writing/{{ page.library }}/tags.html#{{ tag }}">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}{% endunless %}
+</span>

@@ -11,12 +11,12 @@ splash: /assets/img/splash_470x80_books.png
 # The Library
 
 {% for library in site.libraries %}
-<div class="librarybox">
+<div class="librarybox" id="{{ library.library }}">
   <a href="/writing/{{ library.library }}/">
   <p class="libname">{{ library.name }}</p>
   <p class="libdesc">{{ library.desc | downcase }}</p>
   <div class="libicon">
-    {% assign icon = 'svg/' | append: library.icon %}{% include {{ icon }} %}
+    {% assign icon = 'svg/' | append: library.icon | append: '.svg' %}{% include {{ icon }} %}
   </div>
   </a>
 </div>

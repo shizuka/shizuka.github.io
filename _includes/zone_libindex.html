@@ -3,7 +3,7 @@
   <div class="libinfo">
     <h1 class="libname">{{ lib.name }}</h1>
     <h2 class="libdesc">{{ lib.desc }}</h2>
-    <div class="libicon">{% assign icon = 'svg/' | append: lib.icon %}{% include {{ icon }} %}</div>
+    <div class="libicon">{% assign icon = 'svg/' | append: lib.icon | append: '.svg' %}{% include {{ icon }} %}</div>
   </div>
   <ul class="postlist">
     {% for post in libpages %}

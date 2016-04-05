@@ -45,5 +45,5 @@ icon: book
   - boolean, toggle to sort library's posts in newest-first order
   - *default*: false
  - **icon**
-  - name of `_includes/svg/*` to use for library icon
-  - *default*: book (`{ % include svg/book % }`)
+  - name of `_includes/svg/[icon].svg` to use for library icon
+  - *default*: book (`{ % include svg/book.svg % }`)

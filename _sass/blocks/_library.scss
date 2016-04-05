@@ -1,6 +1,7 @@
 .librarybox { // USED BY index-writing.md
   background-color: $c-bg-content;
-  margin: 1rem 0;
+  border: $border;
+  margin: 0.5rem 0;
   position: relative;
   
   a {

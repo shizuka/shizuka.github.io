@@ -10,21 +10,23 @@ splash: /assets/img/splash_470x80_code.png
 
 # projects
 
-<div class="sectionboxes">
+<div class="projindex">
 {% for project in site.data.projects %}
-<section markdown="1">
-  {% unless project.noimage %}
-![{{ project.name }}](icon-{{ project.id }}.png){% unless project.yesborder %}{: .noborder}{% endunless %}
-  {: .floatright}
-  {% endunless %}
+ {% if project.url %}{% capture projurl %}{{ project.url }}.html{% endcapture %}
+ {% else %}{% capture projurl %}{{ project.id }}.html{% endcapture %}
+ {% endif %}
+ <div id="{{ project.id }}" class="project">
+ {% unless project.noicon %}
+  <img alt="{{ project.id }} icon" src="icon-{{ project.id }}.png" class="projicon {% if project.noborder %}noborder{% endif %}">
+ {% endunless %}
+ <div class="projname">
   {% if project.nolink %}
-## {{ project.name }} {#{{ project.id }}}
-  {% elsif project.url %}
-## [{{ project.name }}]({{ project.url }}) {#{{ project.id }}}
+    {{ project.name }}
   {% else %}
-## [{{ project.name }}]({{ project.id }}.html) {#{{ project.id }}}
+    <a href="{{ projurl }}">{{ project.name }}</a>
   {% endif %}
-{{ project.blurb }}
-</section>
+ </div>
+ <div class="projdesc" markdown = "1">{{ project.desc }}</div>
+ </div>
 {% endfor %}
 </div>

@@ -1,8 +1,0 @@
-{% assign lib = site.data.libraries.[page.library] %}
-<p>
-<a href="/writing/{{page.library}}/">{{page.library}}</a> /
-{% if page.book %}
-<a href="/writing/{{page.library}}/#{{page.book}}">{{page.book}}</a> /
-{% endif %}
-{{page.title | downcase}}
-</p>

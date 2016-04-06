@@ -30,7 +30,7 @@ defaults:
     scope:
       path: "" # master defaults
     values:
-      layout: "pg_subpage"
+      layout: pg_subpage
       splash: "/assets/img/splash_470x80_blueforest.png"
       
   -
@@ -38,12 +38,24 @@ defaults:
       path: "projects"
     values:
       yahPrj: true
-      layout: "pg_subpage"
+      layout: pg_subpage
       root:
         name: projects
         url: /projects
       splash: "/assets/img/splash_470x80_code.png"
       
+  -
+    scope:
+      path: "resume"
+      type: pages
+    values:
+      yahRes: true
+      layout: pg_resume
+      root:
+        name: resume
+        url: /resume
+      css:
+        - /resume/resume.css
   -
     scope:
       path: ""

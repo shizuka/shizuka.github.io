@@ -1,0 +1,96 @@
+// This Vortal Cord - Resume Overrides
+// Shizuka Kamishima
+
+@import 'lib/web-fonts';
+@import 'lib/helpers';
+@import 'meta/styles';
+
+$s-res-h2: 24px;
+$s-res-h3: 20px;
+$s-res-h4: 18px;
+
+.resume {
+  .box {
+    padding: 8px;
+    padding-left: 16px;
+    
+    img {
+      float: right;
+      width: 160px;
+      height: 250px;
+    }
+    
+    h1 {
+      font-family: $f-name;
+      margin-top: 6px;
+      font-size: $s-h1;
+    }
+    h2 {
+      font-size: $s-h2;
+      margin-bottom: 8px;
+      font-weight: normal;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin-left: 4px;
+      font-size: 16px;
+      li {
+        margin-bottom: 8px;
+        
+        &:before {
+          font-family: FontAwesome;
+          margin-right: 4px;
+          content: "\f00c"; //fa-check
+          color: $c-link-postinfo;
+        }
+      }
+    }
+    
+  }
+  
+  .stars {
+    color: $c-link-postinfo;
+    font-size: 16px;
+    
+    .fa-star-o {
+      color: $c-text-lighter;
+    }
+  }
+  
+  h2 {
+    font-size: $s-res-h2;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: $s-res-h3;
+  }
+  
+  h4 {
+    font-size: $s-res-h4;
+    font-family: $f-headers;
+    font-weight: normal;
+    margin: 0.75rem -0.25em 0.5rem;
+  }
+  
+  ul {
+    padding-bottom: 0.5rem;
+    
+    li > ul {
+      padding-bottom: 0;
+    }
+  }
+  
+  p {
+    padding: 0;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-left: 4px;
+  }
+  
+}

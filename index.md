@@ -1,6 +1,6 @@
 ---
 # Home
-layout: index
+layout: pg_home
 yahHome: true
 splash: /assets/img/splash_470x240_minnehaha.png
 ---

@@ -1,6 +1,7 @@
 # Liquid Layout Templates
 
  - **pg_home.html** - Home page, w/ summary of projects and recent n posts/pages
+ - **pg_libindex.html** - library indexes, using **zone/libindex.html**
  - **pg_resume.html** - resume page, banner uses special text
  - **pg_root.html** - Root level pages - indexes, banner is just image
  - **pg_subpage.html** - Sublevel pages - banner includes breadcrumbs to index

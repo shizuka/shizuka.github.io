@@ -5,6 +5,7 @@
  - **pg_root.html** - Root level pages - indexes, banner is just image
  - **pg_subpage.html** - Sublevel pages - banner includes breadcrumbs to index
  - **pg_subpost.html** - Sublevel posts - banner w/ breadcrumbs + postinfo block
+ - **raw.html** - straight page content dump, if necessary
 
 * * * * *
 

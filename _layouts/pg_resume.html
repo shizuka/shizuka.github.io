@@ -1,4 +1,4 @@
-{% include mstr_prefix.html %}
+{% include mstr/prefix.html %}
 <div id="contentwrapper" class="resume">
 {% assign sections = content | split:"<p>= = = = =</p>" %}
 {% for section in sections %}
@@ -10,10 +10,10 @@
   <section>
     {{ section | replace: '<hr />', '<div class="clearfix"></div><hr />'}}
     <div class="clearfix"></div>
-    {% include meta_backtotop.html %}
+    {% include meta/backtotop.html %}
   </section>
  {% endif %}
 {% endfor %}
 </div> <!-- #contentwrapper -->
-{% include zone_sidebar.html %}
-{% include mstr_postfix.html %}
+{% include zone/sidebar.html %}
+{% include mstr/postfix.html %}

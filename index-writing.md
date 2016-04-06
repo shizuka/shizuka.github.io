@@ -31,7 +31,7 @@ splash: /assets/img/splash_470x80_books.png
 <ul class="postlist">
   {% for post in libpages %}
   <li><a href="{{ post.url }}">{{ post.title }}</a>
-      {% include meta_postinfo.html %}
+      {% include meta/postinfo.html %}
   {% endfor %}
 </ul>
 {% endif %}

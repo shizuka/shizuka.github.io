@@ -52,7 +52,7 @@ defaults:
       yahRes: true
       layout: pg_resume
       root:
-        name: resume
+        name: resumé
         url: /resume
       css:
         - /resume/resume.css

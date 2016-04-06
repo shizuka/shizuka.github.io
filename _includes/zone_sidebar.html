@@ -29,7 +29,8 @@
       </ul>
     </section>
     <section class="footer">
-      <a href="">page src</a> | <a href="">rss feed</a>
+      {% capture pagesrc %}https://github.com/shizuka/shizuka.github.io/raw/master/{% if page.collection %}{{ page.relative_path }}{% else %}{{ page.path }}{% endif %}{% endcapture %}
+      <a href="{{ pagesrc }}" class="noext">page src</a> | <a href="">rss feed</a>
     </section>
   </div> <!-- .box -->
   <section></section>

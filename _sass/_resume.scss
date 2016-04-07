@@ -31,6 +31,20 @@ $s-res-h4: 18px;
       font-weight: normal;
     }
     
+    p:last-of-type {
+      font-size: 16px;
+      margin-left: 4px;
+      margin-bottom: 8px;
+      &:before {
+        font-family: FontAwesome;
+        margin-right: 4px;
+        width: 16px;
+        display: inline-block;
+        content: "\f0ac"; //fa-globe
+        color: $c-link;
+      }
+    }
+    
     ul {
       list-style-type: none;
       margin-left: 4px;
@@ -41,6 +55,8 @@ $s-res-h4: 18px;
         &:before {
           font-family: FontAwesome;
           margin-right: 4px;
+          display: inline-block;
+          width: 16px;
           content: "\f00c"; //fa-check
           color: $c-link-postinfo;
         }

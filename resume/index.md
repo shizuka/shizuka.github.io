@@ -15,13 +15,14 @@ date: 2016-04-05
 
 ## Developer // Community Manager
 
- - IRC moderation since 2007
- - Broad programming experience
- - Enthusiastic fast learner
- - need two
- - more things
+Twin Cities, MN
 
-= = = = =
+ - IRC moderation since 2007
+ - Broad programming expertise
+ - Enthusiastic fast learner
+ - Highly adaptable
+
+================================================================================
 
 # Skills
 * * *
@@ -34,12 +35,12 @@ date: 2016-04-05
  - Understands and explains complex concepts by drilling through abstractions
 
 ## Java {{lv3}}
- - Perfect exam in high school Advanced Placement Java course
+ - Built cross-platform terminal applications, limited GUI experience
  - Applied design patterns to construct [IRC chatbot][hikaribot]
  - [SQLite database][hb-sqlite] used for same bot
  - [Twitter API integration][hb-twitter] on same bot
  - Some experience integrating third-party libraries
-
+ 
 ## PHP {{lv2}}
  - Built some simple CMS platforms for previous generations of this site
  - Created [Wordpress plugins][brst2embed] for site administration
@@ -71,17 +72,17 @@ date: 2016-04-05
  - Typically use Markdown for documents, Google Sheets for spreadsheets
 
 ## JavaScript {{lv1}}
- - Built simple countdown timer script using Moment.js
+ - Built [simple countdown timer script][brsttimer] using Moment.js
  - Understanding of JS object composition
  - Exposure to Node.js, no experience yet in using it
+ - Built AJAX page content retrieval script before experience in PHP
 
 ## Interface Design {{lv1}}
  - Prefer simple layouts with minimal embellishment
- - Some experience designing GUIs via AutoIt
  - Have designed CSS layouts with simple columns, not grids
  - Limited experience with responsive design
 
-= = = = =
+================================================================================
 
 # Experience
 * * *
@@ -90,10 +91,10 @@ date: 2016-04-05
 
 ## [Bronystate](http://www.bronystate.net) {#bronystate}
 
-### Community Manager / 2011-present
+### Technical Supervisor / 2011-present
 
 Bronystate is an IRC community for the *My Little Pony: Friendship is Magic*
-fandom  (bronies), founded in May 2011. Their focus is video streaming, with
+fandom (bronies), founded in May 2011. Their focus is video streaming, with
 movies on weekends and live streams of new episodes during the season. They
 boast a vibrant, global userbase, reaching tens of thousands annually.
 
@@ -151,7 +152,7 @@ now as a frontend for their Discord chat server.
  - Helped testing IRC bot that integrated with game server
  - Helped testing experimental Tribes 2 game mods
 
-= = = = =
+================================================================================
 
 # Volunteer Work
 
@@ -166,6 +167,7 @@ now as a frontend for their Discord chat server.
 [hb-twitter]: https://github.com/shizuka/hikaribot/blob/master/src/sk/hikaribot/twitter/TwitBot.java
 [brst]: http://www.bronystate.net
 [brst3repo]: https://github.com/Bronystate/brstv3
+[brsttimer]: https://github.com/Bronystate/brstv3/blob/master/assets/js/brst-countdowns.js
 [brst2embed]: https://bitbucket.org/shizuka/sk-bs-theater/
 [tom2012]: https://www.youtube.com/watch?v=4jNBQ-_4zlo
 [tom2013]: https://www.youtube.com/watch?v=pGUXxjkLo2A

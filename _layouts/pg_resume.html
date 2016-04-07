@@ -1,6 +1,6 @@
 {% include mstr/prefix.html %}
 <div id="contentwrapper" class="resume">
-{% assign sections = content | split:"<p>= = = = =</p>" %}
+{% assign sections = content | split:"<p>================================================================================</p>" %}
 {% for section in sections %}
  {% if forloop.first == true %}
   <div class="box">

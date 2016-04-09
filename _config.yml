@@ -6,8 +6,11 @@ baseurl: ""
 markdown: kramdown
 timezone: America/Chicago
 
-# blog posts
-permalink: /writing/blog/:year-:month-:day-:title.html
+gems:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 kramdown:
   input: GFM

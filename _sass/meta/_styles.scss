@@ -98,6 +98,8 @@ $s-h1: 30px;
 $s-h2: 20px;
 $s-h3: 18px;
 
+$s-home-h1: 24px;
+
 
 //// INCLUDE FONTS /////
 @include web-fonts(map-values($fonts));

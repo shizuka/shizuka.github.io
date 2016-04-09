@@ -1,0 +1,26 @@
+#homeindex {
+  h2 {
+    font-size: ($s-h1 + $s-h2) / 2;
+  }
+  section {
+    &:last-child {
+      margin-bottom: -1em;
+    }
+    
+    h1 {
+      font-size: $s-home-h1;
+      margin-bottom: 0;
+    }
+    
+    h2 {
+      display: none;
+    }
+    
+    .postinfo {
+      display: block;
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}

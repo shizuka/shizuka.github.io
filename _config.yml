@@ -90,6 +90,15 @@ defaults:
     values:
       layout: ""
   
+  # LIBRARIES =======================
+  # -
+  #   scope:
+  #     type: writing
+  #     path: "writing/LIBNAME"
+  #   values:
+  #     library: "LIBNAME"
+  #     splash: "/assets/img/splash_470x80_SUBPAGE-DEFAULT-SPLASH.png"
+  #
   -
     scope:
       type: writing
@@ -97,7 +106,6 @@ defaults:
     values:
       library: "blog"
       splash: "/assets/img/splash_470x80_journal.png"
-  
   -
     scope:
       type: writing

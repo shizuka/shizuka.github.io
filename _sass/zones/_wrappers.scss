@@ -1,15 +1,15 @@
 #wrapper {
   margin: auto;
-  width: 760px;
+  max-width: 760px;
 
   @media (max-width: $width) {
-    width: 500px;
+    max-width: 500px;
   }
 }
 
 #contentwrapper {
   clear: both;
-  width: 500px;
+  max-width: 500px;
   float: right;
   
   @media (max-width: $width) {

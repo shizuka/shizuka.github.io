@@ -1,10 +1,10 @@
 #sidebar {
   float: left;
-  width: 230px;
+  max-width: 230px;
   
   @media (max-width: $width) {
     float: none;
-    width: 500px;
+    max-width: 500px;
   }
   
   .box {

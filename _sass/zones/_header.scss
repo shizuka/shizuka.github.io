@@ -4,8 +4,22 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
   
+  @extend .clearfix;
+  
+  @media (max-width: $w-thin) {
+    height: auto;
+    margin-bottom: 4px;
+  }
+  
   #logo {
     float: left;
+
+    @media (max-width: $w-thin) {
+      text-align: center;
+      float: none;
+      margin-bottom: 0;
+    }
+    
     a {
       color: $c-logo;
       text-decoration: none;
@@ -33,6 +47,12 @@ header {
       padding-left: $s-logo-pl;
       float: right;
       color: currentColor;
+      
+      @media (max-width: $w-thin) {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+      }
     }
   } // #logo
   
@@ -43,20 +63,30 @@ header {
     font-family: $f-nav;
     font-weight: bold;
     
+    @extend .clearfix;
+    
     @media (max-width: $width) {
-      margin-top: -16px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    
+    @media (max-width: $w-thin) {
+      float: none;
     }
     
     ul {
       padding: 0;
-      display: inline;
+      display: block;
+      @extend .clearfix;
+      text-align: center;
     }
     li {
       margin: 0;
       padding: 0.25em;
+      padding-right: 0;
       list-style-type: none;
       list-style-position: outside;
-      float: left;
+      display: inline;
       &:after {
         color: $c-link-nav-sep;
         content: " / ";

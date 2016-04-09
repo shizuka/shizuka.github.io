@@ -202,16 +202,3 @@ service to the ponies, rather than standing on its own.
 
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>  
 3/5 stars, for a promising message, but ultimately misaimed focus
-
-
-
-
-
-
-
-
-
-
-
-
-

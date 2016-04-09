@@ -273,4 +273,3 @@ And... I can face this... face... my own end... and... and say... with absolute
 conviction...
 
 that it was good to be human.
-

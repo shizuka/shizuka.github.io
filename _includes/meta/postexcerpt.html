@@ -34,6 +34,5 @@
 {% assign cutout = sections[1] %}
 {% assign exlength = post.exlen | default: 10 %}
 {% assign lines = cutout | remove: '<p>' | remove: '</p>' | newline_to_br | split: "<br />" %}
-{% assign count = 0 %}{% endcapture %}{% if post.blurb %}{% capture output %}{{ post.blurb }} <a class="read-more" href="{{ site.url }}{{ post.url }}">Read more <i class="fa fa-chevron-right"></i></a>{% endcapture %}{% else %}{% capture output %}{% for line in lines %}{% if line.empty? %}{% continue %}{% endif %}{{ line }}{% assign count = count | plus:1 %}{% if count > exlength %}{% assign end = line | slice:-1 %}{% unless end == '.' %}...{% endunless %}{% break %}{% endif %}{% endfor %} <a class="read-more" href="{{ site.url }}{{ post.url }}">Read more <i class="fa fa-chevron-right"></i></a>{% endcapture %}
+{% assign count = 0 %}{% endcapture %}{% if post.blurb.size > 0 %}{% capture output %}{{ post.blurb }} <a class="read-more" href="{{ site.url }}{{ post.url }}">Read more <i class="fa fa-chevron-right"></i></a>{% endcapture %}{% else %}{% capture output %}{% for line in lines %}{% if line.empty? %}{% continue %}{% endif %}{{ line }}{% assign count = count | plus:1 %}{% if count > exlength %}{% assign end = line | slice:-1 %}{% unless end == '.' %}...{% endunless %}{% break %}{% endif %}{% endfor %} <a class="read-more" href="{{ site.url }}{{ post.url }}">Read more <i class="fa fa-chevron-right"></i></a>{% endcapture %}{% endif %}
 {% if include.escape %}{{ output | markdownify | escape }}{% else %}{{ output | markdownify }}{% endif %}
-{% endif %} 

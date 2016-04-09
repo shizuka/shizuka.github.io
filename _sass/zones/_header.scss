@@ -42,6 +42,11 @@ header {
     font-size: $s-nav;
     font-family: $f-nav;
     font-weight: bold;
+    
+    @media (max-width: $width) {
+      margin-top: -16px;
+    }
+    
     ul {
       padding: 0;
       display: inline;

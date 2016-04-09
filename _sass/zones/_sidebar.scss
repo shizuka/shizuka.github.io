@@ -2,6 +2,11 @@
   float: left;
   width: 230px;
   
+  @media (max-width: $width) {
+    float: none;
+    width: 500px;
+  }
+  
   .box {
     padding: 15px 15px 15px 15px;
     

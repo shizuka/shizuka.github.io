@@ -1,6 +1,5 @@
 ---
 title: Bar Logic
-author: Dragon Magazine
 date: 2015-05-24
 ---
 

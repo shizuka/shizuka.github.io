@@ -1,11 +1,17 @@
 ---
 title: Movie Night
 date: 2012-01-16
+blurb: |
+  The forest glows somewhere between blue and green, giving the impression
+  that you've arrived in twilight (whether the sun is rising or has just set
+  you can't tell, though it was nearly nighttime in the world you left).
+  Light winds rustle the leaves high above you, and between gusts you can
+  hear the quiet sounds of birdsong. By now the path has meandered through
+  enough trees that the entry terminal is only a brighter patch of foggy glow
+  behind you...
 ---
 
 # Movie Night
-
------
 
 The connection is established.
 

@@ -155,6 +155,7 @@ now as a frontend for their Discord chat server.
 ================================================================================
 
 # Volunteer Work
+* * *
 
  - [Wrote book review][bkreview] for *My Little Brony: An Unofficial Novel About
    The Magic of Friendship* at publisher request

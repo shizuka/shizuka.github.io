@@ -1,8 +1,8 @@
 ---
 title: The Vortigaunt's Speech
-author: valve software
-date: 2004-11-16
+date: 2015-05-09
 library: gamelit
+exlen: 8
 ---
 
 # The Vortigaunt's Speech #

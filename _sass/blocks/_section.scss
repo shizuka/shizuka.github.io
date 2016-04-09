@@ -8,4 +8,8 @@ section {
   .box + & {
     border: none;
   }
+  
+  &:first-of-type {
+    margin-bottom: 0;
+  }
 }

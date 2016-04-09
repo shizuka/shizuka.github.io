@@ -25,6 +25,10 @@
     margin-right: 0;
   }
   
+  section:first-of-type > & {
+    display: none;
+  }
+  
   section:last-of-type > & {
     display: none;
   }

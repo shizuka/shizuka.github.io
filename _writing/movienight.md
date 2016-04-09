@@ -5,6 +5,8 @@ date: 2012-01-16
 
 # Movie Night
 
+-----
+
 The connection is established.
 
 You step out from a wide circle of light into a dense forest. Behind you,

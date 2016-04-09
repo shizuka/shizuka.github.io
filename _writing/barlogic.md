@@ -9,6 +9,8 @@ date: 2015-05-24
 > appeared in **Dragon Magazine #281**, March 2001  
 > Mind Flayers #21, pg 72
 
+-----
+
 "So there I was in this bar in Sigil," says your drinking companion,
 Feargal the All-Noxious. "You know, the City of Doors on the Concordant
 Opposition, the plane of true neutrality?"

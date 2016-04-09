@@ -1,13 +1,14 @@
 ---
 title: The Vortigaunt's Speech
-author: valve software
-date: 2004-11-16
-library: gamelit
+date: 2015-05-09
+exlen: 8
 ---
 
 # The Vortigaunt's Speech #
 
 ***Half-Life 2*** (2004)
+
+-----
 
 We remember the Freeman. We are coterminous.
 There is no distance between us. No false veils of time or space may intervene.

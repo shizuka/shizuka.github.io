@@ -1,60 +1,58 @@
-# This Vortal Cord - Projects
-# Shizuka Kamishima - 2015
+#===============================================================================
+# This Vortal Cord - Project Metadata
+# Shizuka Kamishima
+#===============================================================================
+# DATA FORMAT===================================================================
 #
 # In the order defined, so the order displayed
 #
-# - id: project                       (references icon-id.png and id.html)
-#   name: Project Title               (duh)
-#   url: http://example.com           (optional! set to override page link)
-#   nolink: false                     (assumes /projects/id.html)
-#   noimage: false                    (assumes /projects/icon-id.png)
-#   yesborder: false                  (optional! set true for img border)
-#   blurb: |                          (short description of project)
-#     foo bar baz
-#     quux fred barney
+# - id: project-slug
+#   name: Project Title
+#   desc: |
+#     foo bar baz quux
+#   # optional fields follow
+#   nolink: false
+#   url: /projects/[id].html
+#   noicon: false
+#   noborder: false
 #
+# - id: another-project
+#   ...
+#
+#===============================================================================
 
 - id: czmix
   name: Cathedral Mix
-  noimage: true
-  blurb: |
+  desc: |
     Hour-long mixes of various trance and progressive tracks
+  noicon: true
 
 - id: brst3
   name: Bronystate 3.0
-  url: https://github.com/Bronystate/brstv3
-  yesborder: true
-  blurb: |
+  desc: |
     Third generation platform for [Bronystate](http://www.bronystate.net),
-    a video streaming site for bronies
-
-- id: kestrelbot
-  name: Kestrel IRC Bot
-  url: https://github.com/shizuka/kestrelirc
-  noimage: true
-  blurb: |
-    Second generation IRC bot for Bronystate, based on HikariBot, in development
+    a video streaming community for the *My Little Pony: Friendship is Magic*
+    fandom
+  url: https://github.com/Bronystate/brstv3
 
 - id: vortalcord
-  name: This Vortal Cord v5
+  name: This Vortal Cord
+  desc: |
+    Source repository for this site
   url: https://github.com/shizuka/shizuka.github.io
-  noimage: true
-  blurb: |
-    Fifth generation personal site, this time powered by Jekyll
+  noicon: true
 
 - id: hikaribot
   name: HikariBot
-  url: https://github.com/shizuka/hikaribot
-  blurb: |
+  desc: |
     IRC bot for Bronystate, providing Twitter posting, and handling of
     extended amount of user bans -- **DISCONTINUED**
+  url: https://github.com/shizuka/hikaribot
+  noborder: true
   
 - id: brstembed
   name: Bronystate 2.0 Embed Switcher
-  url: https://bitbucket.org/shizuka/sk-bs-theater
-  yesborder: true
-  blurb: |
+  desc: |
     Wordpress plugin maintaining a database of stream sources,
     and user-friendly method of selecting one to embed -- **DISCONTINUED**
-
-
+  nolink: true

@@ -1,0 +1,16 @@
+<header>
+  <div id="logo">
+    <a href="/">
+      {% include svg/toran.svg %}
+      <h1>this vortal cord</h1>
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/" {% if page.yahHome %}class="youarehere"{% endif %}>home</a></li>
+      <li><a href="/resume/" {% if page.yahRes %}class="youarehere"{% endif %}>resumé</a></li>
+      <li><a href="/projects/" {% if page.yahPrj %}class="youarehere"{% endif %}>projects</a></li>
+      <li><a href="/writing/" {% if page.yahWrt %}class="youarehere"{% endif %}>writing</a></li>
+    </ul>
+  </nav>
+</header>

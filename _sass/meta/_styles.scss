@@ -1,0 +1,108 @@
+//This Vortal Cord - Text Styles
+//Shizuka Kamishima
+
+$width: 760px; // @media (max-width: $width) { mobile overrides here }
+
+//// COLORS ////
+$c-bg: #eac99a;
+$c-bg-top: #bab293; //top fades into $c-bg
+$c-bg-content: #efe4bd;
+
+$c-text: #2b2922;
+$c-text-light: lighten($c-text, 20%);
+$c-text-lighter: lighten($c-text-light, 20%);
+
+$c-link: #a32500;
+$c-link-hover: saturate(lighten($c-link, 20%), 20%);
+$c-link-nav: darken(#a39770, 15%);
+$c-link-nav: mix($c-link, $c-link-nav, 50%);
+$c-link-nav-hover: darken(#a39770, 30%);
+$c-link-nav-sep: #a39770;
+$c-link-yah: lighten(#efe4bd, 20%);
+$c-link-postinfo: #b36000;
+$c-link-postinfo-hover: saturate(lighten($c-link-postinfo, 20%), 20%);
+
+$c-border: #a39770;
+$border: 2px solid $c-border;
+$border-footer: 2px solid rgba($c-border, 0.5);
+$c-headers: $c-text-light;
+$c-logo: $c-text-light;
+$c-logo-hover: $c-text;
+$c-name: $c-text;
+$c-tagline: $c-text-light;
+
+$c-libicon: darken(saturate($c-border, 25%), 10%);
+$c-bg-libicon: mix($c-bg-content, $c-bg, 45%);
+
+$c-postinfo: $c-text-light;
+
+//// FONTS ////
+$fonts: ();
+@function font($key) {
+  @if map-has-key($fonts, key) == false {
+    $fonts: map-merge($fonts, ($key: ($key))) !global;
+  }
+  @return $key;
+}
+
+$f-default: 'Verdana', sans-serif;
+
+$f-text: font('Fira Sans'), $f-default;
+$f-logo: font('Iceland'), $f-default;
+$f-nav: font('Source Code Pro'), $f-default;
+$f-headers: $f-logo;
+
+$f-name: font('Architects Daughter'), $f-default;
+$f-tagline: $f-text;
+
+$f-breadcrumbs: $f-nav;
+$f-libname: $f-name;
+$f-libdesc: $f-text;
+
+$f-code: font('Source Code Pro'), monospace;
+
+$f-top: $f-text;
+$f-sidebar-h4: $f-headers;
+$f-footer: $f-text;
+
+//// SIZES ////
+$s-text: 13px;
+$s-text-small: 11px;
+
+$s-blockquote: $s-text-small;
+
+$s-logo: 40px;
+$s-logo-mt: 16px;
+$s-logo-pl: 10px;
+
+$s-nav: 14px;
+$s-nav-mt: 21px;
+
+$s-name: 20px;
+$s-tagline: 11px;
+$s-sidebar-h4: 18px;
+
+$s-breadcrumbs: 11px;
+$s-postinfo: 11px;
+
+$s-libname: 20px;
+$s-libdesc: 11px;
+$s-postlist: 14px;
+
+$s-top: 11px;
+$s-top-mt: 0.5em;
+$s-top-foot-mt: $s-top-mt - 2em;
+$s-top-mr: -1em;
+
+$s-footer: 0.85em;
+$s-footer-pad: 0.25em;
+
+$s-h1: 30px;
+$s-h2: 20px;
+$s-h3: 18px;
+
+$s-home-h1: 24px;
+
+
+//// INCLUDE FONTS /////
+@include web-fonts(map-values($fonts));

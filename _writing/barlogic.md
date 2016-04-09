@@ -1,6 +1,5 @@
 ---
 title: Bar Logic
-author: Dragon Magazine
 date: 2015-05-24
 ---
 
@@ -8,6 +7,8 @@ date: 2015-05-24
 
 > appeared in **Dragon Magazine #281**, March 2001  
 > Mind Flayers #21, pg 72
+
+-----
 
 "So there I was in this bar in Sigil," says your drinking companion,
 Feargal the All-Noxious. "You know, the City of Doors on the Concordant
@@ -17,8 +18,8 @@ You assure Feargal that yes, you do know.
 
 "Anyhoo, so I'm drinking away when these four guys in dark hats and trench
 coats take up the table behind me. The barkeep comes over and gives them a
-round on the house, saying he's always happy when a deva, an eladrin, a
-devil, and a demon sit down together for a tasty beverage. Me, I'm trying
+round on the house, saying he's always happy when a deva, an eladrin,
+a devil, and a demon sit down together for a tasty beverage. Me, I'm trying
 to keep from turning around, because I've never seen a group made of beings
 who were, respectively, lawful good, chaotic good, lawful evil, and chaotic
 evil."

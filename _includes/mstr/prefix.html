@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+  This Vortal Cord 6.0
+  Shizuka Kamishima
+  Generated {{ 'now' | date: '%F' }} by Jekyll
+-->
+{%capture cb%}
+  {% if page.library %}
+    {% assign lib = site.libraries | where: "library",page.library | first %}
+    {% assign libpages = site.writing | where: "library",page.library | sort: "date" %}
+    {% if lib.sortdesc %}{% assign libpages = site.writing | where: "library",page.library | sort: "date" | reverse %} {% endif %}
+  {% endif %}
+  {% assign allposts = site.writing | sort: "date" | reverse %}
+{%endcapture%}{%assign cb=nil%}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel='feed' type='application/atom+xml' title='Atom' href='/atom.xml'>
+  <title>{% if page.title %}{{ page.title }} / {% endif %}{% if page.library %}{{ lib.name | downcase }} / {% endif %}{% if page.root %}{{ page.root.name | downcase }} // {% endif %}this vortal cord</title>
+  <link rel="stylesheet" type='text/css' href="/assets/css/main.css">
+  <link rel="stylesheet" type='text/css' href="/assets/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  {% if page.css %}{% for css in page.css %}
+  <link rel='stylesheet' type='text/css' href='{{ css }}'>
+  {% endfor %}{% endif %}
+  {% if page.prejs %}{% for prejs in page.prejs %}
+  <script type='text/javascript' src='{{ prejs }}'></script>
+  {% endfor %}{% endif %}
+</head>
+<body>
+<div id="wrapper">
+{% include zone/header.html %}

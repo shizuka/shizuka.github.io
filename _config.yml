@@ -1,14 +1,16 @@
 #This Vortal Cord v5
-#Shizuka Kamishima - 2015-05-09
+#Shizuka Kamishima
 title: this vortal cord
 url: "http://www.vortalcord.net"
 baseurl: ""
 markdown: kramdown
-highlighter: pygments
 timezone: America/Chicago
 
-# blog posts
-permalink: /writing/blog/:year-:month-:day-:title.html
+gems:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 kramdown:
   input: GFM
@@ -19,6 +21,9 @@ sass:
     sass_dir: _sass
     
 collections:
+  libraries:
+    output: true
+    permalink: /writing/:path/
   writing:
     output: true
     permalink: /writing/:path.html
@@ -26,54 +31,84 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "" # master defaults
     values:
-      layout: "page"
-      author: "Shizuka Kamishima"
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      yahLit: true
-      layoutcss:
-        - /assets/lit/blog.css
-  -
-    scope:
-      path: ""
-      type: writing
-    values:
-      layout: libpage
-      library: 'misc'
-      yahLit: true
-      layoutcss:
-        - /assets/lit/library.css
-  - 
-    scope:
-      path: "about"
-    values:
-      yahAbt: true
+      layout: pg_subpage
+      splash: "/assets/img/splash_470x80_blueforest.png"
+      
   -
     scope:
       path: "projects"
     values:
       yahPrj: true
+      layout: pg_subpage
+      root:
+        name: projects
+        url: /projects
+      splash: "/assets/img/splash_470x80_code.png"
+      
   -
     scope:
       path: "resume"
+      type: pages
     values:
       yahRes: true
+      layout: pg_resume
+      root:
+        name: resumé
+        url: /resume
+      css:
+        - /resume/resume.css
   -
     scope:
-      path: "writing"
+      path: ""
+      type: writing # from src/_writing/*, collected
     values:
-      yahLit: true
-      layoutcss:
-        - /assets/lit/library.css
+      yahWrt: true
+      layout: pg_subpost
+      root:
+        name: writing
+        url: /writing
+      splash: "/assets/img/splash_470x80_blueforest.png"
+      
+  -
+    scope:
+      path: ""
+      type: libraries
+    values:
+      layout: pg_libindex
+      yahWrt: true
+      root:
+        name: writing
+        url: /writing
+      splash: "/assets/img/splash_470x80_books.png"
+      icon: book
+      
   -
     scope:
       path: "assets"
     values:
       layout: ""
-      
+  
+  # LIBRARIES =======================
+  # -
+  #   scope:
+  #     type: writing
+  #     path: "writing/LIBNAME"
+  #   values:
+  #     library: "LIBNAME"
+  #     splash: "/assets/img/splash_470x80_SUBPAGE-DEFAULT-SPLASH.png"
+  #
+  -
+    scope:
+      type: writing
+      path: "writing/blog"
+    values:
+      library: "blog"
+      splash: "/assets/img/splash_470x80_journal.png"
+  -
+    scope:
+      type: writing
+      path: "writing/gamelit"
+    values:
+      library: "gamelit"

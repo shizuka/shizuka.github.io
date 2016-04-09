@@ -1,0 +1,19 @@
+{% include mstr/prefix.html %}
+<div id="contentwrapper" class="resume">
+{% assign sections = content | split:"<p>================================================================================</p>" %}
+{% for section in sections %}
+ {% if forloop.first == true %}
+  <div class="box">
+    {{ section }}
+  </div>
+ {% else %}
+  <section>
+    {{ section | replace: '<hr />', '<div class="clearfix"></div><hr />'}}
+    <div class="clearfix"></div>
+    {% include meta/backtotop.html %}
+  </section>
+ {% endif %}
+{% endfor %}
+</div> <!-- #contentwrapper -->
+{% include zone/sidebar.html %}
+{% include mstr/postfix.html %}

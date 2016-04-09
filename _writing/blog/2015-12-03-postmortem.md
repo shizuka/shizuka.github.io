@@ -2,6 +2,12 @@
 title: Bronystate 3.0 Postmortem
 date: 2015-12-03
 tags: [bronystate]
+blurb: |
+  I'd grumbled since late 2012 that we needed to drop Wordpress in favor of
+  something much simpler that everyone on staff could understand, but the massive
+  stress such a project would entail was too much for me to do alone again. I had
+  maintained that I would not undertake designing a Bronystate 3.0 unless I were
+  paid for the job...
 ---
 
 # Postmortem: The Story of Bronystate 3.0

@@ -1,8 +1,7 @@
 ---
 title: Bronystate 3.0 Postmortem
 date: 2015-12-03
-library: blog
-tags: [storytime, bronystate]
+tags: [bronystate]
 ---
 
 # Postmortem: The Story of Bronystate 3.0

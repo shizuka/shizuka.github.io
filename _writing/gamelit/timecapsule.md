@@ -1,7 +1,16 @@
 ---
 title: The Talos Time Capsules
 date: 2015-08-17
-library: gamelit
+blurb: |
+  **#17**  
+  Nearly everything on this planet, from the surface of the earth to the
+  composition of the atmosphere itself, has been shaped by life. It's a process
+  that takes millions of years. But we humans, with our technology, with our
+  understanding and manipulation of systems, have changed everything in just a few
+  centuries. I think that's also part of what makes us human. We reshape the world
+  in our image. It's how we create ourselves.
+  
+  And how we destroy ourselves.
 ---
 
 # Time Capsules

@@ -69,18 +69,7 @@ defaults:
       root:
         name: writing
         url: /writing
-      splash: "/assets/img/splash_470x80_journal.png"
-  -
-    scope:
-      path: "writing" # from src/writing/*, non collected
-      type: ""
-    values:
-      yahWrt: true
-      layout: pg_subpost
-      root:
-        name: writing
-        url: /writing
-      splash: "/assets/img/splash_470x80_journal.png"
+      splash: "/assets/img/splash_470x80_blueforest.png"
       
   -
     scope:
@@ -100,4 +89,18 @@ defaults:
       path: "assets"
     values:
       layout: ""
-      
+  
+  -
+    scope:
+      type: writing
+      path: "writing/blog"
+    values:
+      library: "blog"
+      splash: "/assets/img/splash_470x80_journal.png"
+  
+  -
+    scope:
+      type: writing
+      path: "writing/gamelit"
+    values:
+      library: "gamelit"

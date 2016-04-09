@@ -1,7 +1,6 @@
 ---
 title: The Vortigaunt's Speech
 date: 2015-05-09
-library: gamelit
 exlen: 8
 ---
 

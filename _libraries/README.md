@@ -6,9 +6,31 @@ e.g: /writing/**blog**/
 
 * * * * *
 
-## Format
+## Library Definition
 
-`_/libraries/libname.html`
+Add following to `_config.yml` - `defaults`
+
+~~~
+  -
+    scope:
+      type: writing
+      path: "writing/LIBNAME"
+    values
+      library: LIBNAME
+      splash: "/assets/img/splash_470x80_SPLASHNAME.png"
+~~~
+
+**NOTE**: Overriding `splash` here will set all pages in this library to that
+splash. They can still override it in their frontmatter block.
+The index's splash is defined in the metadata file in this folder.
+
+**NOTE**: Files in any folder can set their own library independent of this.
+
+* * * * *
+
+## Library Metadata
+
+Create `_/libraries/libname.html`
 
 ~~~
 ---
@@ -21,6 +43,7 @@ splash: /assets/img/splash_470x80_journal.png
 sortdesc: false
 icon: book
 ---
+
 ~~~
 
 * * * * *
@@ -39,8 +62,9 @@ icon: book
 
 ### Overrides
  - **splash**
-  - absolute path to image for splash banner at top of page
-  - *default*: `/assets/img/splash_470x80_journal.png`
+  - absolute path to image for splash banner at top of index page
+  - **NOTE:** Default subpage splashes with the `defaults` block above
+  - *default*: `/assets/img/splash_470x80_books.png`
  - **sortdesc**
   - boolean, toggle to sort library's posts in newest-first order
   - *default*: false

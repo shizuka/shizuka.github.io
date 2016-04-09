@@ -1,7 +1,6 @@
 ---
 title: Vortex95 Mechanics
 date: 2015-05-25 00:01
-library: gamelit
 redirect_from:
   - /writing/blog/2015-05-25-vortex95-readme.html
 ---

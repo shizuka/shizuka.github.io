@@ -12,6 +12,8 @@ gems:
 whitelist:
   - jekyll-redirect-from
 
+exclude: ["bs-config.json", "*.ini", "Gemfile", "Gemfile.lock", "README.md", "package.json"]
+
 kramdown:
   input: GFM
   hard_wrap: false

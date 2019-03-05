@@ -171,18 +171,25 @@ since it must be aligned with the content */
 }
 
 /******/
+h2 {
+  margin-top: 0;
+}
+
 hr {
-  border: 0;
-  height: 2px;
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #46433A, rgba(0, 0, 0, 0));
+  border: 1px solid #e0ddc9;
 }
 
 /*** footer ***/
-footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 20px;
+.footer {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #c6c3b1;
+}
+
+.footer span {
+  padding-left: 7px;
+  font-style: normal;
 }
 
 .poweredby {

@@ -172,21 +172,25 @@ since it must be aligned with the content */
 }
 
 /******/
+h2 {
+	margin-top: 0;
+}
+
 hr {
-	border: 0;
-	height: 2px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
+	border: 1px solid mix($text-color, $background-color, 10%);
 }
 
 /*** footer ***/
-footer {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	height: 20px;
+.footer {
+	text-align: center;
+	font-size: 0.9em;
+	font-style: italic;
+	color: mix($text-color, $background-color, 25%);
+
+	span {
+		padding-left: 7px;
+		font-style: normal;
+	}
 }
 
 .poweredby {

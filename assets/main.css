@@ -1,0 +1,230 @@
+/*
+Hokora - Landing Page SCSS
+Based on Compass Jekyll Theme (c) 2015 Eduardo Rubio
+*/
+body {
+  font-family: 'Lusitana', serif;
+  color: #46433A;
+  background-color: #F1EED9;
+}
+
+header,
+main {
+  padding: 0 20px;
+}
+
+/*** wrapper div for both header and main ***/
+.wrapper {
+  margin-top: 10%;
+}
+
+/*** anchor tags ***/
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #CE534D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eab4b1;
+  text-decoration: underline;
+}
+
+/*** main content list ***/
+.main-list-item {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0.8em 0;
+}
+
+/* override the left margin added by font awesome for the main content list,
+since it must be aligned with the content */
+.fa-ul.main-list {
+  margin-left: 0;
+}
+
+/* list icons */
+.main-list-item-icon {
+  width: 36px;
+  color: #46433A;
+}
+
+.fa-ul.inline-list {
+  margin-left: 0;
+}
+
+.inline-list-item {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.social h2 {
+  margin-bottom: 0.5em;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.social li {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  list-style-type: none;
+  font-size: 2em;
+}
+
+.social a {
+  color: #46433A;
+}
+
+.social a:hover {
+  color: #CE534D;
+}
+
+.social [data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.social [data-tooltip]:before, .social [data-tooltip]:after {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.social [data-tooltip]:hover:before, .social [data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.social [data-tooltip]:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -15px;
+  padding: 7px;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #46433A;
+  color: #F1EED9;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/*** logo ***/
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  display: inline-block;
+  background-size: cover;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 2px solid #F1EED9;
+  -webkit-box-shadow: 0 0 0 3px #46433A;
+          box-shadow: 0 0 0 3px #46433A;
+}
+
+/*** author ***/
+.author-container h1 {
+  font-size: 2.8em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/*** tagline ***/
+.tagline-container p {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+
+.title p {
+  margin-top: 0;
+}
+
+/******/
+hr {
+  border: 0;
+  height: 2px;
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #46433A, rgba(0, 0, 0, 0));
+}
+
+/*** footer ***/
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 20px;
+}
+
+.poweredby {
+  font-family: "Arial Narrow", Arial;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  padding: 0 5px;
+}
+
+/*** media queries ***/
+/* X-Small devices (phones, 480px and up) */
+@media (min-width: 480px) {
+  /* wrapper stays 480px wide past 480px wide and is kept centered */
+  .wrapper {
+    width: 480px;
+    margin: 10% auto 0 auto;
+  }
+}
+
+/* All other devices (768px and up) */
+@media (min-width: 768px) {
+  /* past 768px the layout is changed and the wrapper has a fixed width of 680px
+	to accomodate both the header column and the content column */
+  .wrapper {
+    width: 680px;
+  }
+  /* the header column stays left and has a dynamic width with all contents
+	aligned right */
+  header {
+    float: left;
+    width: 46%;
+    text-align: right;
+  }
+  .author-container h1,
+  .logo-container,
+  .tagline-container p {
+    text-align: right;
+  }
+  main {
+    width: 46%;
+    margin-left: 54%;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

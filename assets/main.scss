@@ -33,8 +33,7 @@ a:active {
 }
 
 a:hover {
-	color: lighten($anchor-text-color, 25%);
-	text-decoration: underline;
+	color: mix($anchor-text-color, $background-color, 50%);
 }
 
 
@@ -118,9 +117,9 @@ since it must be aligned with the content */
 			margin-bottom: 5px;
 			margin-left: -15px;
 			padding: 7px;
-			width: 100px;
+			width: 90px;
 			border-radius: 3px;
-			background-color: $text-color;
+			background-color: $anchor-text-color;
 			color: $background-color;
 			content: attr(data-tooltip);
 			text-align: center;
@@ -168,7 +167,6 @@ since it must be aligned with the content */
 
 .title p {
 	margin-top: 0;
-	//font-size: 0.9em;
 }
 
 /******/
@@ -188,7 +186,7 @@ hr {
 	color: mix($text-color, $background-color, 25%);
 
 	span {
-		padding-left: 7px;
+		padding-left: 2.5ex;
 		font-style: normal;
 	}
 }

@@ -3,3 +3,5 @@ Gemfile.lock
 _site/*
 *.bat
 .sass-cache/*
+assets/main.css
+assets/main.css.map

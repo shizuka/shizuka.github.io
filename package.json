@@ -1,9 +1,0 @@
-{
-  "name": "this-vortal-cord",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "concurrently \"npm run jekyll:w\" \"npm run sync\" ",
-    "jekyll:w": "bundle exec jekyll serve",
-    "sync": "browser-sync start --proxy \"localhost:4000\" --files \"_site/*\" --reloadDelay \"2000\""
-  }
-}

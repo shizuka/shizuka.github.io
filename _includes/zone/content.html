@@ -1,7 +1,0 @@
-{% assign sections = content | split:"<hr />" %}{% for sectioncontent in sections %}
-<section>
-{{ sectioncontent }}
-<div class="clearfix"></div>
-{% include meta/backtotop.html %}
-</section>
-{% endfor %}

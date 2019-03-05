@@ -1,5 +1,3 @@
-# shizuka.github.io
+# hokora
 
-Github Pages for This Vortal Cord, my personal site
-
-http://www.vortalcord.net
+landing page repo

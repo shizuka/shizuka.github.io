@@ -42,6 +42,10 @@ a:hover {
 	font-weight: bold;
 	font-size: 1.2em;
 	margin: 0.8em 0;
+
+	a:hover .main-list-item-icon {
+		color: $anchor-text-color;
+	}
 }
 
 /* override the left margin added by font awesome for the main content list,
@@ -85,11 +89,8 @@ since it must be aligned with the content */
 		font-size: 2em;
 	}
 
-	a {
-		color: $text-color;
-		&:hover {
-			color: $anchor-text-color;
-		}
+	.fa-discord {
+		color: $anchor-text-color;
 	}
 
 	[data-tooltip] {

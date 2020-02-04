@@ -1,0 +1,99 @@
+/*
+Hokora - Cathedral Mix SCSS
+Based on Compass Jekyll Theme (c) 2015 Eduardo Rubio
+Cathedral Zero logo based on Great Zero Stained Glass by Tweek
+*/
+@font-face {
+  font-family: 'HevteeKornay';
+  src: url(/assets/font/HevteeKornayNTS-Regular.eot);
+  src: url(/assets/font/HevteeKornayNTS-Regular.eot) format("embedded-opentype"), url(/assets/font/HevteeKornayNTS-Regular.woff2) format("woff2"), url(/assets/font/HevteeKornayNTS-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HevteeKornay';
+  src: url(/assets/font/HevteeKornayNTS-Medium.eot);
+  src: url(/assets/font/HevteeKornayNTS-Medium.eot) format("embedded-opentype"), url(/assets/font/HevteeKornayNTS-Medium.woff2) format("woff2"), url(/assets/font/HevteeKornayNTS-Medium.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HevteeKornay';
+  src: url(/assets/font/HevteeKornayNTS-Bold.eot);
+  src: url(/assets/font/HevteeKornayNTS-Bold.eot) format("embedded-opentype"), url(/assets/font/HevteeKornayNTS-Bold.woff2) format("woff2"), url(/assets/font/HevteeKornayNTS-Bold.woff) format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.logo {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  height: 240px;
+}
+
+.dni {
+  font-family: "HevteeKornay", sans-serif;
+  font-weight: bolder;
+}
+
+.mixtitle {
+  font-size: 1.5em;
+  margin-bottom: 0.25rem;
+}
+
+.tracklist {
+  margin: 0;
+  padding: 0;
+}
+
+.tracklist .track {
+  margin: 0;
+  padding: 0;
+}
+
+.tracklist .track li {
+  list-style-type: none;
+}
+
+.tracklist .track li.time {
+  font-family: monospace;
+  font-size: 1.2em;
+  height: 2em;
+  margin-right: 1em;
+  float: left;
+}
+
+.tracklist .track li.title {
+  font-weight: bold;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.tracklist .track li.mix {
+  font-weight: bold;
+  font-size: 0.8em;
+  display: inline-block;
+}
+
+.tracklist .track li.artist {
+  font-style: italic;
+  font-size: 0.8em;
+  display: block;
+}
+
+.tracklist .track li.album {
+  font-style: italic;
+  font-size: 0.8em;
+  display: inline-block;
+}
+
+.tracklist .track:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*# sourceMappingURL=czmix.css.map */

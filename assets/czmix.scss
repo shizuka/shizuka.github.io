@@ -18,25 +18,16 @@ $background-color: #F1EED9;
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: 'HevteeKornay';
-	src: url(/assets/font/HevteeKornayNTS-Medium.eot);
-	src: 
-		url(/assets/font/HevteeKornayNTS-Medium.eot) format('embedded-opentype'),
-		url(/assets/font/HevteeKornayNTS-Medium.woff2) format('woff2'),
-		url(/assets/font/HevteeKornayNTS-Medium.woff) format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'HevteeKornay';
-	src: url(/assets/font/HevteeKornayNTS-Bold.eot);
-	src: 
-		url(/assets/font/HevteeKornayNTS-Bold.eot) format('embedded-opentype'),
-		url(/assets/font/HevteeKornayNTS-Bold.woff2) format('woff2'),
-		url(/assets/font/HevteeKornayNTS-Bold.woff) format('woff');
-	font-weight: bolder;
-	font-style: normal;
+  font-family: 'KerathHand';
+  src: url(/assets/font/KerathHand-Cursive.eot);
+  src: 
+    url(/assets/font/KerathHand-Cursive.eot)   format('embedded-opentype'),
+    url(/assets/font/KerathHand-Cursive.woff2) format('woff2'),
+    url(/assets/font/KerathHand-Cursive.woff)  format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .logo {
@@ -48,37 +39,80 @@ $background-color: #F1EED9;
 
 .dni {
   font-family: "HevteeKornay", sans-serif;
-  font-weight: bolder;
+}
+.dnihand {
+  font-family: "KerathHand";
+}
+
+.title {
+  h1 {
+    font-size: 1.5em;
+    margin: 0.5rem 0 0 0;
+  }
+  h3 {
+    font-style: italic;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 0.5rem 0.5rem;
+  }
+  p {
+
+  }
 }
 
 .mixtitle {
   font-size: 1.5em;
   margin-bottom: 0.25rem;
+
+  .number {
+    font-size: 1em;
+    margin-right: 1ex;
+  }
 }
 
 .download {
-
+  .size {
+    font-size: 0.8em;
+  }
+  .time {
+    font-size: 1.25em;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  width: fit-content;
+  border-bottom: 2px solid mix($text-color, $background-color, 30%);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .tracklist { //ol
-  margin: 0;
+  margin: 0 0 0.25rem;
   padding: 0;
   .track { //ul
     margin: 0;
     padding: 0;
+    display: flex;
+
+    ul {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      padding: 0;
+    }
+
     li {
       list-style-type: none;
 
       &.time {
         font-family: monospace;
         font-size: 1.2em;
-        height: 2em;
-        margin-right: 1em;
-        float: left;
+        margin-right: 1.5ex;
+        display: inline-block;
       }
       &.title {
         font-weight: bold;
         font-size: 1em;
+        margin-right: 0.2em;
         display: inline-block;
       }
       &.mix {
@@ -89,7 +123,6 @@ $background-color: #F1EED9;
       &.artist {
         font-style: italic;
         font-size: 0.8em;
-        display: block;
       }
       &.album {
         font-style: italic;

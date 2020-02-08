@@ -19,20 +19,17 @@ Cathedral Zero logo based on Great Zero Stained Glass by Tweek
   font-style: normal;
 }
 
-.logo {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: 0;
-  height: 240px;
-}
-
 .dni {
   font-family: "HevteeKornay", sans-serif;
 }
 
 .dnihand {
   font-family: "KerathHand";
+}
+
+.number {
+  font-size: 1em;
+  margin-right: 1ex;
 }
 
 .title h1 {
@@ -42,19 +39,22 @@ Cathedral Zero logo based on Great Zero Stained Glass by Tweek
 
 .title h3 {
   font-style: italic;
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 1.4em;
+  font-weight: bold;
   margin: 0 0 0.5rem 0.5rem;
+}
+
+.title .mixlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .mixtitle {
   font-size: 1.5em;
   margin-bottom: 0.25rem;
-}
-
-.mixtitle .number {
-  font-size: 1em;
-  margin-right: 1ex;
 }
 
 .download {
@@ -135,5 +135,9 @@ Cathedral Zero logo based on Great Zero Stained Glass by Tweek
   content: "";
   clear: both;
   display: table;
+}
+
+.footer {
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=czmix.css.map */

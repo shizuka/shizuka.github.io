@@ -30,18 +30,15 @@ $background-color: #F1EED9;
   font-style: normal;
 }
 
-.logo {
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  height: 240px;
-}
-
 .dni {
   font-family: "HevteeKornay", sans-serif;
 }
 .dnihand {
   font-family: "KerathHand";
+}
+.number {
+  font-size: 1em;
+  margin-right: 1ex;
 }
 
 .title {
@@ -51,23 +48,23 @@ $background-color: #F1EED9;
   }
   h3 {
     font-style: italic;
-    font-size: 1em;
-    font-weight: normal;
+    font-size: 1.4em;
+    font-weight: bold;
     margin: 0 0 0.5rem 0.5rem;
   }
-  p {
-
+  
+  .mixlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 }
 
 .mixtitle {
   font-size: 1.5em;
   margin-bottom: 0.25rem;
-
-  .number {
-    font-size: 1em;
-    margin-right: 1ex;
-  }
 }
 
 .download {
@@ -137,4 +134,8 @@ $background-color: #F1EED9;
       display: table;
     }
   }
+}
+
+.footer {
+  margin-bottom: 5rem;
 }

@@ -64,6 +64,7 @@ Cathedral Zero logo based on Great Zero Stained Glass by Tweek
   border-bottom: 2px solid #bebba9;
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .download .size {
@@ -73,7 +74,6 @@ Cathedral Zero logo based on Great Zero Stained Glass by Tweek
 .download .time {
   font-size: 1.25em;
   font-family: monospace;
-  font-weight: bold;
 }
 
 .tracklist {

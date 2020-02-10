@@ -74,12 +74,12 @@ $background-color: #F1EED9;
   .time {
     font-size: 1.25em;
     font-family: monospace;
-    font-weight: bold;
   }
   width: fit-content;
   border-bottom: 2px solid mix($text-color, $background-color, 30%);
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .tracklist { //ol

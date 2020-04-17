@@ -1,4 +1,4 @@
-# hokora
+# hokora.page
 
 landing page repo
 
